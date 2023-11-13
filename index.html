@@ -7,7 +7,7 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/DreamTeam/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/DreamTeam/assets/index-6999ff10.css">
+    <link rel="stylesheet" href="/DreamTeam/assets/index-40822e14.css">
   </head>
   <body>
     <header class="header">
@@ -25,9 +25,33 @@
 </header>
 
 
-    <div class="js-backdrop-modal">
-      
+
+
+
+  
+  <div class="js-backdrop-modal ">
+    <div class="modal about-book-modal">
+    <button id="modal-close" class="close-modal-btn" type="button" aria-label="close">
+        <svg class="button--close-icon" width="28" height="28">
+            <use href="/DreamTeam/assets/sprit-84edf0a2.svg#close"></use>
+        </svg>
+    </button>
+    <div id="allModal"></div>
+    <div class="storage-button-wrapper">
+        <button type="button" class="add-storage-button modal-id-buttons">
+            Add to shopping list
+        </button>
+
+        <div class="remove-modal-btn">
+            <button type="button" class="storage-delete-button modal-id-buttons">
+                Remove from the shopping list
+            </button>
+            <p class="storage-description"></p>
+        </div>
     </div>
+</div>
+  </div>
+
     
   </body>
 </html>
