@@ -35,38 +35,29 @@
 
 @font-face {
   font-family: 'DM Sans';
-  src: url('DMSans-Medium.eot');
-  src: url('DMSans-Medium.eot?#iefix') format('embedded-opentype'),
-    url('DMSans-Medium.woff2') format('woff2'),
-    url('DMSans-Medium.woff') format('woff'),
-    url('DMSans-Medium.svg#DMSans-Medium') format('svg');
+  src: url('../fonts/DMSans-Regular.eot');
+  src: url('../font/DMSans-Regular.woff') format('woff'),
+    url('../fonts/#DMSans-Regular.ttf') format('truetype'),
+    url('../fonts/DMSans-Regular.svg') format('svg');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/DMSans-Medium.eot');
+  src: url('../fonts/DMSans-Medium.woff') format('woff'),
+    url('../fonts/DMSans-Medium.ttf') format('truetype'),
+    url('../fonts/DMSans-Medium.svg') format('svg');
   font-weight: 500;
-  font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'DM Sans';
-  src: url('DMSans-Regular.eot');
-  src: url('DMSans-Regular.eot?#iefix') format('embedded-opentype'),
-    url('DMSans-Regular.woff2') format('woff2'),
-    url('DMSans-Regular.woff') format('woff'),
-    url('DMSans-Regular.svg#DMSans-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'DM Sans';
-  src: url('DMSans-Bold.eot');
-  src: url('DMSans-Bold.eot?#iefix') format('embedded-opentype'),
-    url('DMSans-Bold.woff2') format('woff2'),
-    url('DMSans-Bold.woff') format('woff'),
-    url('DMSans-Bold.svg#DMSans-Bold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+  src: url('../fonts/DMSans-Bold.eot');
+  src: url('../fonts/DMSans-Bold.woff') format('woff'),
+    url('../fonts/DMSans-Bold.ttf') format('truetype'),
+    url('../fonts/DMSans-Bold.svg') format('svg');
+  font-weight: 700;
 }
 
 .container {
