@@ -5,7 +5,6 @@ import amazonPng from '../img/modal/amazon.png';
 import appleBookPng from '../img/modal/applebook.png';
 
 
-
 const allModal = document.querySelector('#allModal');
 
 const storageButton = document.querySelector('.add-storage-button');
@@ -133,12 +132,9 @@ function createMarkup(data) {
         </li>
         </ul>
         </div>
-        </div>`
-;
-
+        </div>`;
   allModal.innerHTML = html;
 }
-
 
 let storageArr = [];
 
@@ -177,9 +173,13 @@ function onStorageDelete() {
   // storageArr.splice(indexToDelete, 1);
 
   // localStorage.setItem(STORAGE_KEY, JSON.stringify(storageArr));
+
   localStorage.removeItem(localStorage.getItem(STORAGE_KEY))
+
 
   storageCheck();
 }
 
+
 export { createModal };
+
