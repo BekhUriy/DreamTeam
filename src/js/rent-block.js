@@ -1,73 +1,60 @@
 import { API_SERVICE } from './api-requests';
 const listCreate = document.querySelector('.shopping-cards');
-const shoppingCard = document.querySelector('.shopping-card')
+
 const deleteShoppingList = document.querySelector('.shopping-btn-delete');
 const apiShoppingList = new API_SERVICE();
 const shoppingStorage = document.querySelector('.shopping-storage');
-shoppingStorage.style.display = "none";
+document.deleteCardItem = function deleteCardItem(id) {
+  let data = load(storageKey)
+  data = data.filter(book => book.id !== id)
+  localStorage.setItem(storageKey, JSON.stringify(data))
 
-const remove = key => {
-  try {
-    localStorage.removeItem(key);
-  } catch (error) {
-    console.error('Remove state error: ', error.message);
-  }
-};
+   const element = document.getElementById('' + id + '');
+   element.remove();
+  if (data.length === 0) {
+    listCreate.style.display = 'none';
+    shoppingStorage.style.display = 'block';
+ }
+}
 
-deleteShoppingList.addEventListener('click', onTrushBtn);
-function onTrushBtn(evt) {
-  evt.currentTarget.remove();
-  remove();
-};
-
-function createMarcup() {
-  apiShoppingList
-    .fetchBookById(bookId)
-    .then(response => {
-      return response.data
-        .map(
-          ({
-            book_image,
-            title,
-            list_name,
-            description,
-            author,
-            buy_links: [{ name, url }],
-          }) => `
-  <li class="shopping-card">
+function createMarcup(data) {
+   return data.map(
+          (book) => `
+  <li class="shopping-card" id="${book.id}">
         <div class="shopping-card-img">
-          <img src="${book_image}" alt="${title}"/>
+          <img src="${book.book_image}" alt="${book.title}"/>
         </div>
         <div class="shopping-blok">
-          <h2 class="shopping-book-title">"${title}"</h2>
-          <p class="shopping-book-category">"${list_name}"</p>
-          <p class="shopping-book-description">"${description}"</p>
-          <p class="shopping-book-autor">"${author}"</p>
+          <h2 class="shopping-book-title">"${book.title}"</h2>
+          <p class="shopping-book-category">"${book.list_name}"</p>
+          <p class="shopping-book-description">"${book.description}"</p>
+          <p class="shopping-book-autor">"${book.author}"</p>
         </div>
         <ul class="shopping-shops">
           <li class="shopping-shop">
             <a
-              href="${buy_links[0].url}"
+              href="${book.marketAmazon}"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Amazon-book site"
             >
-              <img src="./img/amazon.png" class="shopping-shop-amazon" alt="${buy_links[0].name}" />
+              <img src="./img/amazon.png" class="shopping-shop-amazon" alt="${book.marketAmazon}" />
             </a>
           </li>
           <li class="shopping-shop">
             <a
-              href="${buy_links[0].url}"
+              href="${book.marketAppleBooks}"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Apple-book site"
             >
-              <img src="./img/appleBook.png" class="shopping-shop-appleBook" alt="${buy_links[0].name}" />
+              <img src="./img/appleBook.png" class="shopping-shop-appleBook" alt="${book.marketAppleBooks}" />
             </a>
           </li>
         </ul>
         <button
           type="button"
+          onClick = "deleteCardItem('${book.id}')"
           class="shopping-btn-delete"
           aria-label="Delete the book from shopping list"
         >
@@ -77,21 +64,27 @@ function createMarcup() {
         </button>
       </li>`
         )
-        .join('');
-    })
-    .catch(error => {
-      console.error(error);
-    });
+    .join('');
 }
 
-f/* unction getShoppingItems() {
-  if (localStorage.length > 0) {
-    shoppingStorage.style.display = 'none';
-    listCreate.innerHTML = createMarcup();
+const storageKey = 'storage-data';
+  const load = key => {
+  try {
+    const serializedState = localStorage.getItem(key);
+    return serializedState === null ? [] : JSON.parse(serializedState);
+  } catch (error) {
+    console.error('Get state error: ', error.message);
+  }
+};
+
+function getShoppingItems() {
+   const data = load(storageKey)
+  if (data && data.length > 0) {
+     shoppingStorage.style.display = 'none';
+    listCreate.innerHTML = createMarcup(data);
   } else {
     listCreate.style.display = 'none';
     shoppingStorage.style.display = 'block';
   }
 }
 getShoppingItems();
- */
