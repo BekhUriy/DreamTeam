@@ -35,28 +35,28 @@
 
 @font-face {
   font-family: 'DM Sans';
-  src: url('../fonts/DMSans-Regular.eot');
-  src: url('../font/DMSans-Regular.woff') format('woff'),
-    url('../fonts/#DMSans-Regular.ttf') format('truetype'),
-    url('../fonts/DMSans-Regular.svg') format('svg');
+  src: url('./fonts/DMSans-Regular.eot');
+  src: url('./font/DMSans-Regular.woff') format('woff'),
+    url('./fonts/#DMSans-Regular.ttf') format('truetype'),
+    url('./fonts/DMSans-Regular.svg') format('svg');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'DM Sans';
-  src: url('../fonts/DMSans-Medium.eot');
-  src: url('../fonts/DMSans-Medium.woff') format('woff'),
-    url('../fonts/DMSans-Medium.ttf') format('truetype'),
-    url('../fonts/DMSans-Medium.svg') format('svg');
+  src: url('./fonts/DMSans-Medium.eot');
+  src: url('./fonts/DMSans-Medium.woff') format('woff'),
+    url('./fonts/DMSans-Medium.ttf') format('truetype'),
+    url('./fonts/DMSans-Medium.svg') format('svg');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'DM Sans';
-  src: url('../fonts/DMSans-Bold.eot');
-  src: url('../fonts/DMSans-Bold.woff') format('woff'),
-    url('../fonts/DMSans-Bold.ttf') format('truetype'),
-    url('../fonts/DMSans-Bold.svg') format('svg');
+  src: url('./fonts/DMSans-Bold.eot');
+  src: url('./fonts/DMSans-Bold.woff') format('woff'),
+    url('./fonts/DMSans-Bold.ttf') format('truetype'),
+    url('./fonts/DMSans-Bold.svg') format('svg');
   font-weight: 700;
 }
 
