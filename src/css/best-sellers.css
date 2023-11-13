@@ -164,7 +164,7 @@ display: block;
       margin-bottom: 32px;
     }
   }
-  
+
 .best-sellers-book-img {
   width: 335px;
 height: 485px;
@@ -191,7 +191,6 @@ align-self: center;
   width: 218px;
 height: 366px;
 }
-
 @media only screen and (min-width: 1140px){
   width: 180px;
   height: 306px;

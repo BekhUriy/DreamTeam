@@ -1,0 +1,159 @@
+li,
+a,
+ul,
+ol,
+h2,
+img,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.is-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.donation {
+    width: 335px;
+    height: 460px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4F2EE8 18.03%, #FFF 100%);
+    box-shadow: 0px 10px 10px 0px rgba(245, 245, 247, 0.10);
+    padding: 26px 40px;
+    color: #FFF;
+
+}
+
+@media only screen and (min-width: 704px) {
+    .donation {
+        height: 474px;
+    }
+}
+
+@media only screen and (min-width: 1392px) {
+    .donation {
+        width: 356px;
+        height: 474px;
+    }
+
+}
+
+.support-header {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 116.667% */
+    letter-spacing: -0.96px;
+    font-family: 'DM Sans', sans-serif;
+    justify-content: flex-start;
+}
+
+.header-text {
+    font-size: 22px;
+}
+
+@media only screen and (min-width: 704px) {
+    .header-text {
+        font-size: 24px;
+    }
+}
+
+
+.fonds {
+    overflow: hidden;
+    height: 292px;
+    padding: 0;
+    margin-top: 44px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-shrink: 0;
+
+}
+
+@media only screen and (min-width: 704px) {
+    .fonds {
+        margin-bottom: 24px;
+    }
+}
+
+@media only screen and (min-width: 1392px) {
+    .fonds {
+        margin-top: 42px;
+    }
+}
+
+.fonds-elm {
+    height: 32px;
+
+}
+
+.fonds-link {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    color: #FFF;
+}
+
+.num-order {
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.56px;
+    font-size: 14px;
+
+}
+
+@media only screen and (min-width: 704px) {
+    .num-order {
+        font-size: 16px;
+    }
+}
+
+.nav-btn {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.icon {
+    stroke: #4F2EE8;
+}
+
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

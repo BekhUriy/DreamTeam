@@ -1,5 +1,6 @@
 import { createModal } from './about-book-modal';
-// Змінити на клік по зображенням
+
+
 
 const idModal = document.querySelector('.about-book-modal');
 const closeModalBtn = document.querySelector('#modal-close');
@@ -9,7 +10,7 @@ const idBackdropModal = document.querySelector('.js-backdrop-modal');
 
 
 function openModalId(e) {
-        
+
         e.preventDefault();
         const bookId = this.getAttribute('data-book-id');
         idModal.classList.remove('is-hidden');
@@ -39,4 +40,6 @@ idBackdropModal.addEventListener('click', function (event) {
   }
 });
 
+
 export { openModalId };
+
