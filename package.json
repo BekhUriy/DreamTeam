@@ -1,11 +1,12 @@
 {
-  "name": "vanilla-app-template",
+  "name": "DreamTeam",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "start": "vite",
+    "build": "vite build --base=/DreamTeam/",
     "preview": "vite preview"
   },
   "devDependencies": {
