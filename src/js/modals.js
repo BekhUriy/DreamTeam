@@ -1,4 +1,5 @@
-iimport { createModal } from './about-book-modal';
+import { createModal } from './about-book-modal';
+
 
 
 const idModal = document.querySelector('.about-book-modal');
@@ -39,4 +40,6 @@ idBackdropModal.addEventListener('click', function (event) {
   }
 });
 
+
 export { openModalId };
+

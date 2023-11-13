@@ -4,6 +4,7 @@ import amazonPng from '../img/modal/amazon.png';
 
 import appleBookPng from '../img/modal/applebook.png';
 
+
 const allModal = document.querySelector('#allModal');
 
 const storageButton = document.querySelector('.add-storage-button');
@@ -13,6 +14,7 @@ const removeStorageBtn = document.querySelector('.remove-modal-btn');
 const storageDescription = document.querySelector('.storage-description');
 
 const STORAGE_KEY = 'storage-data';
+
 
 storageButton.addEventListener('click', onStorageAdd);
 
@@ -171,9 +173,13 @@ function onStorageDelete() {
   // storageArr.splice(indexToDelete, 1);
 
   // localStorage.setItem(STORAGE_KEY, JSON.stringify(storageArr));
-  localStorage.removeItem(localStorage.getItem(STORAGE_KEY));
+
+  localStorage.removeItem(localStorage.getItem(STORAGE_KEY))
+
 
   storageCheck();
 }
 
+
 export { createModal };
+
