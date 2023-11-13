@@ -1,0 +1,35 @@
+.scrollBtn {
+  position: fixed;
+  top: 80%;
+  left: 80%;
+  width: 54px;
+  height: 54px;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 50%;
+  color: var(--background_l);
+  border-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--text-hover);
+  z-index: 1000;
+  opacity: 0.7;
+}
+
+.scrollIcon {
+  fill: white;
+}
+
+.scrollBtn:hover,
+.scrollBtn:focus {
+  opacity: 1;
+}
+
+.scrollBtn.scrollBtn-hide {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .scrollBtn {
+    left: 90%;
+    top: 90%;
+  }
+}
