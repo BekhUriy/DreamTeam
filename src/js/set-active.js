@@ -1,4 +1,6 @@
-export function setActive() {
+export function setActive(evt) {
+  const category = document.querySelector('.category');
+
     const activeCategory = evt.target
 
       const allCategories = category.querySelectorAll('a');

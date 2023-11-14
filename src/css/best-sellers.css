@@ -58,7 +58,7 @@ margin-right: auto;
 width: 218px;
 height: 366px;
 /* display: block; */
-/* width: calc((100% - 50px) / 3); */
+width: calc((100% - 50px) / 3);
 
 }
 
@@ -69,7 +69,7 @@ height: 366px;
 @media only screen and (min-width: 1141px){
   .category-books{
     gap: 24px;
-    padding-left: 16px;
+    /* padding-left: 16px; */
   }
   .category-book{
     width: 180px;
