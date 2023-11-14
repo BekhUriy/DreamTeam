@@ -1,12 +1,11 @@
 import { API_SERVICE} from "./api-requests";
-import { openModalId } from "./modals";
-// import Notiflix from "notiflix";
-
+// import { openModalId } from "./modals";
+// 
 const topBooksByCategories = document.querySelector('.best-sellers-books')
 const apiCategories = new API_SERVICE();
 
  bestSellersMarkup();
- 
+
 async function bestSellersMarkup () {
     let result = await apiCategories
     .fetchBestSellersBooks()
@@ -23,11 +22,10 @@ async function bestSellersMarkup () {
              <p class="best-sellers-book-title">${book.title}</p>
              <p class="best-sellers-book-author">${book.author}</p>
              <p class="book-overlay">Quick view</p>
-
 </li>`
             ).join('');
             // console.log(booksArr);
-            
+
             topBooksByCategories.insertAdjacentHTML('beforeend', 
             `<li class="best-seller-category"> 
                 <p class="category-title"> ${topCategory.list_name} </p> 
@@ -52,4 +50,5 @@ async function bestSellersMarkup () {
 
     return result;
     }
-    
+
+    export{bestSellersMarkup};

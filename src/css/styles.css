@@ -4,22 +4,128 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
+
+@import url('./modal-about.css');
+@import url('./best-sellers.css');
+@import url('./category-list.css');
+@import url('./footer.css');
 @import url('./header.css');
+
+@import url('./rent-block.css');
+@import url('./reset.css');
+@import url('./skrollBtn.css');
+@import url('./support-ua.css');
 
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+  line-height: 1, 12;
   font-weight: 400;
+  --bold: 700;
+  font-style: normal;
+  --background_l: #f6f6f6;
+  --background_d: #202024;
+  --background_m: rgba(17, 17, 17, 0.4);
+  --background_active: #eac645;
+  --text: #111;
+  --text-menu: rgba(17, 17, 17, 0.6);
+  --text-hover: #4f2ee8;
+  --text-gray: #b4afaf;
+  color-scheme: light;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+/* @font-face {
+  font-family: 'DM Sans';
+  src: url('./fonts/DMSans-Regular.eot');
+  src: local('☺'), url('./font/DMSans-Regular.woff') format('woff'),
+    url('./fonts/#DMSans-Regular.ttf') format('truetype'),
+    url('./fonts/DMSans-Regular.svg') format('svg');
+  font-weight: 400;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./fonts/DMSans-Medium.eot');
+  src: local('☺'), url('./fonts/DMSans-Medium.woff') format('woff'),
+    url('./fonts/DMSans-Medium.ttf') format('truetype'),
+    url('./fonts/DMSans-Medium.svg') format('svg');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./fonts/DMSans-Bold.eot');
+  src: local('☺'), url('./fonts/DMSans-Bold.woff') format('woff'),
+    url('./fonts/DMSans-Bold.ttf') format('truetype'),
+    url('./fonts/DMSans-Bold.svg') format('svg');
+  font-weight: 700;
+} */
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../font/DMSans-Medium.eot');
+  src: url('../font/DMSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../font/DMSans-Medium.woff2') format('woff2'),
+    url('../font/DMSans-Medium.woff') format('woff'),
+    url('../font/DMSans-Medium.ttf') format('truetype'),
+    url('../font/DMSans-Medium.svg#DMSans-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../font/DMSans-Regular.eot');
+  src: url('../font/DMSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/DMSans-Regular.woff2') format('woff2'),
+    url('../font/DMSans-Regular.woff') format('woff'),
+    url('../font/DMSans-Regular.ttf') format('truetype'),
+    url('../font/DMSans-Regular.svg#DMSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../font/DMSans-Bold.eot');
+  src: url('../font/DMSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/DMSans-Bold.woff2') format('woff2'),
+    url('DMSans-Bold.woff') format('woff'),
+    url('../font/DMSans-Bold.ttf') format('truetype'),
+    url('../font/DMSans-Bold.svg#DMSans-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--background_l);
+  font-family: 'DM Sans';
+  font-style: normal;
+  color: var(--text);
+  font-weight: 400;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tablet screen */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+/* Desktop screen */
+@media only screen and (min-width: 1140px) {
+  .container {
+    max-width: 1140px;
+  }
 }
