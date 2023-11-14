@@ -68,9 +68,9 @@ function createMarcup(data) {
 function getLocalStorage(key) {
   const meaning = localStorage.getItem(key);
   if (meaning === null) {
-    [];
+  return  [];
   } else {
-    JSON.parse(meaning)
+  return JSON.parse(meaning);
   }
 };
 
