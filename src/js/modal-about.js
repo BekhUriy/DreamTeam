@@ -1,4 +1,15 @@
 
+ // Функція для відкриття модального вікна
+    function openModal() {
+        document.getElementById('myModal').style.display = 'block';
+    }
+
+ // Функція для закриття модального вікна
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+
+
 
 
 // const bookId = this.getAttribute('data-book-id');
@@ -17,4 +28,5 @@ function openModalId() {
     idModal.classList.remove('is-hidden');
     idBackdropModal.classList.remove('is-hidden');
 }
+
 
