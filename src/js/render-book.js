@@ -1,3 +1,4 @@
+import { API_SERVICE } from "./api-requests";
 
 const title = document.querySelector('h1')
 const main = document.querySelector('.best-sellers-books')
