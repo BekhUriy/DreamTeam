@@ -167,6 +167,8 @@ ul {
 }
 
 .shopping-list-book-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
   margin: 0;
   width: 114px;
   height: 18px;
@@ -200,9 +202,9 @@ ul {
   margin: 0 0 14px 0;
   overflow: hidden;
   color: #111;
-  white-space: nowrap;
+ /*  white-space: nowrap; */
   text-overflow: ellipsis;
-  /*  text-wrap: wrap; */
+
   font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
