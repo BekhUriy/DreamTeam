@@ -20,8 +20,10 @@ function modWin(event) {
 const homePage = document.querySelector('.js-home-link');
 const shoppingListPage = document.querySelector('.js-shopping-link');
 const currentPage = location.pathname;
-if (currentPage === '/project-DreamTeam09/home.html') {
-  homePage.classList.add('active');
-} else {
+
+if (currentPage === '/project-DreamTeam/shoping-list.html') {
   shoppingListPage.classList.add('current');
+} else {
+  homePage.classList.add('current');
 }
+
