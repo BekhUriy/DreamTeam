@@ -1,9 +1,4 @@
-
-
-
 // const bookId = this.getAttribute('data-book-id');
-
-
 
 const bestSellerElements = document.querySelectorAll('.category-book');
 bestSellerElements.forEach(element => {
@@ -14,6 +9,6 @@ bestSellerElements.forEach(element => {
 });
 
 function openModalId() {
-    idModal.classList.remove('is-hidden');
-    idBackdropModal.classList.remove('is-hidden');
+  idModal.classList.remove('is-hidden');
+  idBackdropModal.classList.remove('is-hidden');
 }
