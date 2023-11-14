@@ -1,6 +1,7 @@
 import { API_SERVICE} from "./api-requests";
-// import { openModalId } from "./modals";
-// 
+import { selectedCategory } from "./category-markup";
+// import {openModalId}
+
 const topBooksByCategories = document.querySelector('.best-sellers-books')
 const apiCategories = new API_SERVICE();
 
@@ -22,7 +23,7 @@ async function bestSellersMarkup () {
              <p class="best-sellers-book-title">${book.title}</p>
              <p class="best-sellers-book-author">${book.author}</p>
              <p class="book-overlay">Quick view</p>
-</li>`
+            </li>`
             ).join('');
             // console.log(booksArr);
 
@@ -32,16 +33,23 @@ async function bestSellersMarkup () {
                 <ul class="best-sellers-list-in-category">
                 ${booksArr} 
                 </ul> 
-                <button type="button" class="best-sellers-see-more-button" data-button-category-name="${topCategory.list_name}">See more</button>
+                <button type="button" class="best-sellers-see-more-button" data-category-name="${topCategory.list_name}">See more</button>
                     </li>`)
         }).join('')
     })
-    .then(()=>{
-       const openBookEl = document.querySelectorAll('.js-open-modal');
-        openBookEl.forEach(function(item){
-                //  console.log(item);
-                 item.addEventListener('click', openModalId);
-    })
+    // .then(()=>{
+    //    const openBookEl = document.querySelectorAll('.js-open-modal');
+    //     openBookEl.forEach(function(item){
+    //             //  console.log(item);
+    //              item.addEventListener('click', openModalId);
+    // })
+    // })
+    .then(() => {
+        const seeMoreInCategory = document.querySelectorAll('.best-sellers-see-more-button');
+        seeMoreInCategory.forEach(function(button){
+            // console.log(button);
+            button.addEventListener('click', selectedCategory)
+        })
     })
     .catch(error => {
         console.log(error.message);
