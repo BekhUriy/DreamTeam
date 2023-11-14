@@ -18,26 +18,26 @@ aside {
     }
 }
 
-/* Firefox */
-* {
-    scrollbar-width: auto;
-    scrollbar-color: #c0c0c0 #ffffff;
-}
+ /* Firefox */
+ * {
+     scrollbar-width: auto;
+     scrollbar-color: #c0c0c0 transparent;
+ }
 
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-    width: 8px;
-}
+ /* Chrome, Edge, and Safari */
+ *::-webkit-scrollbar {
+     width: 8px;
+ }
 
-*::-webkit-scrollbar-track {
-    background: #ffffff;
-}
+ *::-webkit-scrollbar-track {
+     background: transparent
+ }
 
-*::-webkit-scrollbar-thumb {
-    background-color: #c0c0c0;
-    border-radius: 10px;
-    border: 2px solid #ffffff;
-}
+ *::-webkit-scrollbar-thumb {
+     background-color: #c0c0c0;
+     border-radius: 10px;
+     border: 2px solid transparent
+ }
 
 .category {
     overflow: scroll;

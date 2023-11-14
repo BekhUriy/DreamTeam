@@ -35,6 +35,7 @@ function createList() {
                 // console.log(item);
             })
         })
+        
         .catch(error => { console.error(error) });
 }
 
