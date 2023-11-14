@@ -33,7 +33,7 @@
   color-scheme: light;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'DM Sans';
   src: url('./fonts/DMSans-Regular.eot');
   src: local('☺'), url('./font/DMSans-Regular.woff') format('woff'),
@@ -58,6 +58,42 @@
     url('./fonts/DMSans-Bold.ttf') format('truetype'),
     url('./fonts/DMSans-Bold.svg') format('svg');
   font-weight: 700;
+} */
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../font/DMSans-Medium.eot');
+  src: url('../font/DMSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../font/DMSans-Medium.woff2') format('woff2'),
+    url('../font/DMSans-Medium.woff') format('woff'),
+    url('../font/DMSans-Medium.ttf') format('truetype'),
+    url('../font/DMSans-Medium.svg#DMSans-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../font/DMSans-Regular.eot');
+  src: url('../font/DMSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/DMSans-Regular.woff2') format('woff2'),
+    url('../font/DMSans-Regular.woff') format('woff'),
+    url('../font/DMSans-Regular.ttf') format('truetype'),
+    url('../font/DMSans-Regular.svg#DMSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../font/DMSans-Bold.eot');
+  src: url('../font/DMSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/DMSans-Bold.woff2') format('woff2'),
+    url('DMSans-Bold.woff') format('woff'),
+    url('../font/DMSans-Bold.ttf') format('truetype'),
+    url('../font/DMSans-Bold.svg#DMSans-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
 }
 
 .container {
