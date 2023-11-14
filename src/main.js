@@ -1,4 +1,3 @@
-
 import './js/api-requests.js';
 import './js/best-sellers.js';
 import './js/category-list.js';
