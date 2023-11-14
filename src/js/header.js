@@ -17,13 +17,16 @@ function modWin(event) {
   }
 }
 // js for links
-const homePage = document.querySelector('.js-home-link');
-const shoppingListPage = document.querySelector('.js-shopping-link');
+const navLinks = document.querySelectorAll('.header-nav-link');
+console.log(location.pathname);
 const currentPage = location.pathname;
+console.log(currentPage);
 
-if (currentPage === '/project-DreamTeam/shoping-list.html') {
-  shoppingListPage.classList.add('current');
-} else {
-  homePage.classList.add('current');
-}
+navLinks.forEach(function(link) {
+  const linkPath = link.getAttribute('href');
+       console.log(linkPath);
+       if (`.${currentPage}` === linkPath) {
+         link.classList.add('current');
+       }
+});
 

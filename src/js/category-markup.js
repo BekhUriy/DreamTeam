@@ -5,9 +5,7 @@ import { setActive } from './set-active';
 
 const apiByCategory = new API_SERVICE();
 const topBooksByCategories = document.querySelector('.best-sellers-books');
-// const bestSellersRef = document.querySelector('.best-sellers');
 const titleRef = document.querySelector('.home-page-title');
-// const homePageTitleAccent = document.querySelector('.home-page-title-accent');
 
 function updatePageTitle(categoryTitle) {
   const titleWords = categoryTitle.split(' ');
