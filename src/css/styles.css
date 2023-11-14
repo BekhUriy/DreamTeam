@@ -5,15 +5,17 @@
   |============================
 */
 
-@import url('./about-book-modal.css');
+@import url('./modal-about.css');
 @import url('./best-sellers.css');
 @import url('./category-list.css');
 @import url('./footer.css');
 @import url('./header.css');
+
 @import url('./rent-block.css');
 @import url('./reset.css');
 @import url('./skrollBtn.css');
 @import url('./support-ua.css');
+
 
 :root {
   font-family: DM Sans, sans-serif;

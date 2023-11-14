@@ -1,5 +1,5 @@
 import { API_SERVICE} from "./api-requests";
-import { openModalId } from "./modals";
+// import { openModalId } from "./modals";
 // 
 const topBooksByCategories = document.querySelector('.best-sellers-books')
 const apiCategories = new API_SERVICE();
