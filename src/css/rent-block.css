@@ -249,3 +249,17 @@ ul {
   bottom: 0;
   right: 0;
 }
+
+@media only screen and (min-width: 768px){
+  .shopping-list-card{
+    padding: 24px;
+    margin-left: 32px;
+      margin-right: 32px;
+  }
+
+}
+
+
+@media only screen and (min-width: 1440px){
+
+}
