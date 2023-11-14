@@ -96,6 +96,14 @@
   font-style: normal;
 }
 
+body {
+  background-color: var(--background_l);
+  font-family: 'DM Sans';
+  font-style: normal;
+  color: var(--text);
+  font-weight: 400;
+}
+
 .container {
   min-width: 320px;
   max-width: 375px;
