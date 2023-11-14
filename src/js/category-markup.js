@@ -1,5 +1,6 @@
 import { API_SERVICE } from "./api-requests";
 import { bestSellersMarkup } from "./best-sellers";
+import { setActive } from "./set-active";
 
 const apiByCategory = new API_SERVICE();
 const topBooksByCategories = document.querySelector('.best-sellers-books');
@@ -11,15 +12,15 @@ const titleRef = document.querySelector('.home-page-title');
 
 function updatePageTitle(categoryTitle) {
 
-    const titleWords = categoryTitle.split(' ');
+  const titleWords = categoryTitle.split(' ');
   const accentWord = titleWords.pop();
   const blackWords = titleWords.join(' ');
-  const markup = `${blackWords} <span class="home-page-title-accent">${accentWord}</span>`;
+  const pageTitle = `${blackWords} <span class="home-page-title-accent">${accentWord}</span>`;
   if (categoryTitle === 'All categories'){
     return `
     Best Sellers <span class="home-page-title-accent">Books</span>`
   }
- return markup;
+ return pageTitle;
 }
 
 function selectedCategory(event){
@@ -27,12 +28,14 @@ function selectedCategory(event){
     
     // this.classList.add('active');
 
+
       if (event.target.dataset.categoryName === 'All categories') {
         bestSellersMarkup();
         // titleRef.innerHTML = `
         // Best Sellers <span class="home-page-title-accent">Books</span>`;
       }
       const categoryName = this.getAttribute('data-category-name');
+      setActive(event);
 // console.log(categoryName);
 
 titleRef.innerHTML = updatePageTitle(categoryName);
