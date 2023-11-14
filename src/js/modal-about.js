@@ -17,3 +17,4 @@ function openModalId() {
     idModal.classList.remove('is-hidden');
     idBackdropModal.classList.remove('is-hidden');
 }
+
