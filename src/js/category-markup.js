@@ -1,6 +1,7 @@
 import { API_SERVICE } from "./api-requests";
 import { bestSellersMarkup } from "./best-sellers";
 import { setActive } from "./set-active";
+import { openModalId } from "./modals";
 
 const apiByCategory = new API_SERVICE();
 const topBooksByCategories = document.querySelector('.best-sellers-books');
@@ -61,6 +62,13 @@ async function onCategoryMarkup(selectedOption){
             topBooksByCategories.classList.replace("best-sellers-books","category-books")
             topBooksByCategories.innerHTML = booksArr;
  })
+ .then(()=>{
+  const openBookEl = document.querySelectorAll('.js-open-modal');
+   openBookEl.forEach(function(item){
+           //  console.log(item);
+            item.addEventListener('click', openModalId);
+})
+})
 }
 
 
