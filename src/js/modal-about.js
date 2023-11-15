@@ -1,4 +1,3 @@
-import * as basicLightbox from 'basiclightbox';
 
 const adBtn = document.getElementById('ad');
 const removeB = document.getElementById('removeBtn');
