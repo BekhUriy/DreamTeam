@@ -22,7 +22,7 @@ function createMarcup(data) {
           (book) => `
   <li class="shopping-list-card" id="${book.id}">
         <div class="shopping-list-card-img">
-          <img src="${book.book_image}" alt="${book.title}"/>
+          <img src="${book.book_image}" class="shopping-list-img" alt="${book.title}"/>
         </div>
         <div class="shopping-list-blok">
           <h2 class="shopping-list-book-title">"${book.title}"</h2>
