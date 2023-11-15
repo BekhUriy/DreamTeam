@@ -30,15 +30,17 @@ function modWin(event) {
 //        }
 // });
 
+
 const currentPage = location.pathname;
-console.log('current page:', currentPage);
+
 const homePage = document.querySelector('.js-home-link'); 
 const shoppingListPage = document.querySelector('.js-shopping-link'); 
 
 
-if (currentPage === '/shoping-list.html') { 
-    shoppingListPage.classList.add('current'); 
+if (currentPage === '/DreamTeam/shoping-list.html') { 
+  shoppingListPage.classList.add('current'); 
+  shoppingListPage.style.paddingBottom = '7px';
+  shoppingListPage.style.paddingTop = '7px';
   } else { 
       homePage.classList.add('current'); 
 }
-

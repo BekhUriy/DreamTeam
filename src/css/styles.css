@@ -10,12 +10,12 @@
 @import url('./category-list.css');
 @import url('./footer.css');
 @import url('./header.css');
-/* @import url('./rent-block.css'); */
+@import url('./rent-block.css');
 @import url('./reset.css');
 @import url('./scrollBtn.css');
 @import url('./support-ua.css');
 @import url('./loader.css');
-/* @import url('./dark.css'); */
+
 
 :root {
   font-family: DM Sans, sans-serif;
@@ -25,7 +25,7 @@
   --bold: 700;
   font-style: normal;
   --background_l: #f6f6f6;
-   --background_d: #202024;
+  --background_d: #202024;
   --background_h: #FFFFFF;
   --background_m: rgba(17, 17, 17, 0.4);
   --background_active: #eac645;
