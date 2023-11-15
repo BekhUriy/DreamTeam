@@ -17,16 +17,26 @@ function modWin(event) {
   }
 }
 // js for links
-const navLinks = document.querySelectorAll('.header-nav-link');
-console.log(location.pathname);
-const currentPage = location.pathname;
-console.log(currentPage);
+// const navLinks = document.querySelectorAll('.header-nav-link');
+// console.log(location.pathname);
+// const currentPage = location.pathname;
+// console.log(currentPage);
 
-navLinks.forEach(function(link) {
-  const linkPath = link.getAttribute('href');
-       console.log(linkPath);
-       if (`.${currentPage}` === linkPath) {
-         link.classList.add('current');
-       }
-});
+// navLinks.forEach(function(link) {
+//   const linkPath = link.getAttribute('href');
+//        console.log(linkPath);
+//        if (`.${currentPage}` === linkPath) {
+//          link.classList.add('current');
+//        }
+// });
+
+const currentPage = location.pathname;
+const homePage = document.querySelector('.js-home-link'); 
+const shoppingListPage = document.querySelector('.js-shopping-link'); 
+ 
+if (currentPage === '/DreamTeam/shoping-list.html') { 
+    shoppingListPage.classList.add('current'); 
+  } else { 
+      homePage.classList.add('current'); 
+}
 
