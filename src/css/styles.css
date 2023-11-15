@@ -15,7 +15,7 @@
 @import url('./scrollBtn.css');
 @import url('./support-ua.css');
 
-:root {
+/* :root {
   font-family: DM Sans, sans-serif;
   font-size: 14px;
   line-height: 1.12;
@@ -31,7 +31,7 @@
   --text-hover: #4f2ee8;
   --text-gray: #b4afaf;
   color-scheme: light;
-}
+} */
 
 /* @font-face {
   font-family: 'DM Sans';

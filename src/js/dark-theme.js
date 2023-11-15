@@ -1,12 +1,15 @@
-// const root = document.querySelector(':root')
-// const themeSwitch = document.querySelector('#themeSwitch');
+if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {
+    document.documentElement.style.display = 'none';
 
-// themeSwitch.addEventListener('change', changeTheme);
+    const linkElement = document.createElement('link');
+    linkElement.rel = 'stylesheet';
+    linkElement.href = 'light.css';
+    linkElement.onload = function () {
+        document.documentElement.style.display = '';
+    };
 
-// function changeTheme() {
-//     event.preventDefault();
-//     root.classList.toggle('dark-theme', themeSwitch.checked);
-// }
+    document.head.appendChild(linkElement);
+}
 
 const lightStyles = document.querySelectorAll('link[rel=stylesheet][media*=prefers-color-scheme][media*=light]');
 const darkStyles = document.querySelectorAll('link[rel=stylesheet][media*=prefers-color-scheme][media*=dark]');
@@ -88,3 +91,7 @@ function clearScheme() {
 
 setupSwitcher();
 setupScheme();
+
+
+
+
