@@ -1,6 +1,6 @@
 .footer_container {
-  background-color: white;
-  border: 1.5px solid #111111;
+  background-color: var(--background_l);
+  border: 1.5px solid var(--text);
   border-radius: 8px 8px 0px 0px;
   padding-top: 13px;
   padding-bottom: 14px;
@@ -12,7 +12,7 @@
 
 .footer_wrapper {
   text-align: center;
-  color: #202024;
+  color: var(--text);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.125;
