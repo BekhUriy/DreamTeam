@@ -109,8 +109,7 @@ body {
   max-width: 375px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 /* Tablet screen */
@@ -122,8 +121,33 @@ body {
   }
 }
 /* Desktop screen */
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1440px) {
   .container {
-    max-width: 1140px;
+    max-width: 1440px;
+    padding-left: 24px;
+  padding-right: 24px;
   }
 }
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 40px;
+  margin-bottom: 80px;
+
+}
+
+@media only screen and (min-width: 768px){
+  .home-page {
+    margin-bottom: 100px;
+    }
+}
+@media only screen and (min-width: 1440px){
+  .home-page {
+    flex-direction: row;
+    }
+}
+
+
+
