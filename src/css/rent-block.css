@@ -14,7 +14,7 @@ h1 .shopping-list-heading {
 
 .shopping-list-heading {
   margin-left: 20px;
-  color: #111;
+  color:var(--text);
   font-family: DM Sans;
   font-size: 32px;
   font-style: normal;
@@ -35,7 +35,7 @@ h1 .shopping-list-heading {
 }
 
 .shopping-list-storage-empty {
-  color: rgba(0, 0, 0, 0.6);
+  color:var(--text-gray);
   text-align: center;
   font-family: DM Sans;
   font-size: 18px;
