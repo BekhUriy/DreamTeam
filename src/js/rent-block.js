@@ -17,52 +17,54 @@
 //  }
 // }
 
-// function createMarcup(data) {
-//    return data.map(
-//           (book) => `
-//   <li class="shopping-list-card" id="${book.id}">
-//         <div class="shopping-list-card-img">
-//           <img src="${book.book_image}" alt="${book.title}"/>
-//         </div>
-//         <div class="shopping-list-blok">
-//           <h2 class="shopping-list-book-title">"${book.title}"</h2>
-//           <p class="shopping-list-book-category">"${book.list_name}"</p>
-//           <p class="shopping-list-book-description">"${book.description}"</p>
-//           <p class="shopping-list-book-autor">"${book.author}"</p>
-//         </div>
-//         <ul class="shopping-list-shops">
-//           <li class="shopping-list-shop">
-//             <a
-//               href="${book.marketAmazon}"
-//               target="_blank"
-//               rel="noopener noreferrer"
-//             >
-//               <img src="./img/amazon.png" class="amazon" alt="${book.marketAmazon}" />
-//             </a>
-//           </li>
-//           <li class="shopping-list-shop">
-//             <a
-//               href="${book.marketAppleBooks}"
-//               target="_blank"
-//               rel="noopener noreferrer"
-//             >
-//               <img src="./img/appleBook.png" class="appleBook" alt="${book.marketAppleBooks}" />
-//             </a>
-//           </li>
-//         </ul>
-//         <button
-//           type="button"
-//           onClick = "deleteCardItem('${book.id}')"
-//           class="shopping-list-btn-delete"
-//         >
-//           <svg class="shopping-list-btn-delete-icon" width="18" height="18">
-//             <use href=./img/sprit.svg#icon-trash-03"></use>
-//           </svg>
-//         </button>
-//       </li>`
-//         )
-//     .join('');
-// }
+
+function createMarcup(data) {
+   return data.map(
+          (book) => `
+  <li class="shopping-list-card" id="${book.id}">
+        <div class="shopping-list-card-img">
+          <img src="${book.book_image}" class="shopping-list-img" alt="${book.title}"/>
+        </div>
+        <div class="shopping-list-blok">
+          <h2 class="shopping-list-book-title">"${book.title}"</h2>
+          <p class="shopping-list-book-category">"${book.list_name}"</p>
+          <p class="shopping-list-book-description">"${book.description}"</p>
+          <p class="shopping-list-book-autor">"${book.author}"</p>
+        </div>
+        <ul class="shopping-list-shops">
+          <li class="shopping-list-shop">
+            <a
+              href="${book.marketAmazon}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/amazon.png" class="amazon" alt="${book.marketAmazon}" />
+            </a>
+          </li>
+          <li class="shopping-list-shop">
+            <a
+              href="${book.marketAppleBooks}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/appleBook.png" class="appleBook" alt="${book.marketAppleBooks}" />
+            </a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          onClick = "deleteCardItem('${book.id}')"
+          class="shopping-list-btn-delete"
+        >
+          <svg class="shopping-list-btn-delete-icon" width="18" height="18">
+            <use href=./img/sprit.svg#icon-trash-03"></use>
+          </svg>
+        </button>
+      </li>`
+        )
+    .join('');
+}
+
 
 //  const storageKey = 'storage-data';
 // function getLocalStorage(key) {

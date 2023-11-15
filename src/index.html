@@ -12,41 +12,34 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <meta name="color-scheme" content="light dark" />
-    <link
-      rel="stylesheet"
-      href="./css/light.css"
-      media="prefers-color-scheme: light"
-    />
-    <link
-      rel="stylesheet"
-      href="./css/dark.css"
-      media="prefers-color-scheme: dark"
-    />
+    
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <!-- Анна -->
-    <load ="partials/header.html" />
-    <main>
+    <load="partials/header.html" />
+    <main class="container">
       <!-- Зоряна Чернишова -->
-      <aside>
-        <load ="partials/category-list.html" />
-        <load ="partials/support-ua.html" />
-      </aside>
-      <!-- <load ="partials/modal-about.html" /> -->
-
-      <load ="partials/best-sellers.html" />
-      <load ="partials/scrollBtn.html" />
+      <div class="home-page">
+        <!-- <div class="aside"> -->
+        <aside>
+          <load ="partials/category-list.html" />
+          <load ="partials/support-ua.html" />
+        </aside>
+        <!-- </div> -->
+        <!--<load ="partials/modal-about.html" />-->
+        <load ="partials/best-sellers.html" />
+        <load ="partials/scrollBtn.html" />
+      </div>
     </main>
     <!-- Loads the specified .html file -->
     <div id="myModal" class="myModal">
-      <load ="partials/modal-about.html" />
+      <load="partials/modal-about.html" />
     </div>
     <!-- <load ="partials/modal-about.html" /> -->
-    <load ="partials/footer.html" />
+    <load="partials/footer.html" />
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/index.js"></script>
   </body>
 </html>

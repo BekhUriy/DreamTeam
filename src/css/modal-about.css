@@ -23,9 +23,11 @@
     transition: fill 0.3s ease;
     background: white;
 }
+
 .about-paragraf{
     display: none;
 }
+
 .modal-about{
     font-family: 'DM Sans';
     font-style: normal;
