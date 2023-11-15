@@ -1,4 +1,4 @@
-(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))o(t);new MutationObserver(t=>{for(const s of t)if(s.type==="childList")for(const l of s.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&o(l)}).observe(document,{childList:!0,subtree:!0});function r(t){const s={};return t.integrity&&(s.integrity=t.integrity),t.referrerPolicy&&(s.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?s.credentials="include":t.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function o(t){if(t.ep)return;t.ep=!0;const s=r(t);fetch(t.href,s)}})();const n=document.querySelector(".shopping-list-cards");document.querySelector(".shopping-list-btn-delete");const a=document.querySelector(".shopping-list-storage");document.deleteCardItem=function(e){let r=p(c);r=r.filter(t=>t.id!==e),localStorage.setItem(c,JSON.stringify(r)),document.getElementById(""+e).remove(),r.length===0&&(n.style.display="none",a.style.display="block")};function d(i){return i.map(e=>`
+import"./assets/styles-f0a213f0.js";const l=document.querySelector(".shopping-list-cards");document.querySelector(".shopping-list-btn-delete");const i=document.querySelector(".shopping-list-storage");document.deleteCardItem=function(e){let s=a(n);s=s.filter(o=>o.id!==e),localStorage.setItem(n,JSON.stringify(s)),document.getElementById(""+e).remove(),s.length===0&&(l.style.display="none",i.style.display="block")};function p(t){return t.map(e=>`
   <li class="shopping-list-card" id="${e.id}">
         <div class="shopping-list-card-img">
           <img src="${e.book_image}" alt="${e.title}"/>
@@ -38,5 +38,5 @@
             <use href=./img/sprit.svg#icon-trash-03"></use>
           </svg>
         </button>
-      </li>`).join("")}const c="storage-data";function p(i){const e=localStorage.getItem(i);return e===null?[]:JSON.parse(e)}function g(){const i=p(c);i&&i.length>0?(a.style.display="none",n.innerHTML=d(i)):(n.style.display="none",a.style.display="block")}g();
-//# sourceMappingURL=rent-block-624b7c9c.js.map
+      </li>`).join("")}const n="storage-data";function a(t){const e=localStorage.getItem(t);return e===null?[]:JSON.parse(e)}function r(){const t=a(n);t&&t.length>0?(i.style.display="none",l.innerHTML=p(t)):(l.style.display="none",i.style.display="block")}r();
+//# sourceMappingURL=commonHelpers2.js.map
