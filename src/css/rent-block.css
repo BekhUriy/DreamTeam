@@ -4,7 +4,7 @@
 
 .shopping-list-wrapper {
   height: 812px;
-  background: #f6f6f6;
+  background: var(--background_l);
   padding-top: 40px;
 }
 
@@ -25,7 +25,7 @@ h1 .shopping-list-heading {
 
 .shopping-list-heading-color {
   margin-top: 112px;
-  color: #4f2ee8;
+  color: var(--text-hover);
   font-family: DM Sans;
   font-size: 32px;
   font-style: normal;
@@ -102,9 +102,6 @@ p.shopping-list-storage-empty {
     background: #f6f6f6;
   }
 
-  .header {
-    background: #fff;
-  }
 
   .shopping-list-wrapper {
     position: absolute;
