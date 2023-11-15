@@ -31,6 +31,7 @@
   --background_active: #eac645;
   --text: #111;
   --switch_round: #F7F7F7;
+  --title-blue-text:#4f2ee8;
   --text-menu: rgba(17, 17, 17, 0.6);
   --text-hover: #4f2ee8;
   --text-gray: #b4afaf;
@@ -42,9 +43,9 @@
   --background_h: #111;
   --background_m: rgba(17, 17, 17, 0.4);
   --background_active: #eac645;
-   --text: #ffffff;
+  --text: #ffffff;
   --text-menu: rgba(17, 17, 17, 0.6);
-  --text-hover: #4f2ee8;
+  --text-hover: #eac645;
   --text-gray: #b4afaf;
   --text-menu:rgba(255, 255, 255, 0.6);
   color-scheme: dark;

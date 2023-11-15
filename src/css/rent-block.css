@@ -22,7 +22,7 @@ h1 .shopping-list-heading {
 }
 .shopping-list-heading-color {
   margin-top: 112px;
-  color: var(--text-hover);
+  color: var(--title-blue-text);
   font-family: DM Sans;
   font-size: 32px;
   font-style: normal;
