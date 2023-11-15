@@ -1,21 +1,24 @@
 <div class="modal-about">
-  <button type="button" class="about-close">
-    <svg>
+  <button type="button">
+    <svg class="about-close">
       <use href="./img/sprit.svg#close"></use>
     </svg>
   </button>
-  <div class="modal-book">
+  <div class="modal-book" id="my-modal-book">
   </div>
-  <button type="button" class="modal-ad">
+  <div id="aboutBtns">
+  <button type="button" id="ad" class="modal-ad">
     Add book to shopping list
   </button>
   <div class="remove">
-    <button type="button" class="modal-ad">
+    <button type="button" id="removeBtn" class="modal-ad remove">
       Delete from shopping list
     </button>
-    <p class="about-paragraf">Сongratulations! You have added the book to the shopping list. To delete, press the
+    <p id="removeP" class="about-paragraf remove">Сongratulations! You have added the book to the shopping list. To delete, press the
       button “Remove from the shopping
       list”.
     </p>
   </div>
+  </div>
+  <script src="/src/js/modal-about.js"></script>
 </div>
