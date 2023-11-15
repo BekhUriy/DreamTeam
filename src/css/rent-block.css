@@ -11,8 +11,7 @@ h1 .shopping-list-heading {
 }
 .shopping-list-heading {
    margin-left: 20px;
-  color: #111;
-  font-family: DM Sans;
+  color: var(--text);
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -236,8 +235,8 @@ p.shopping-list-storage-empty {
   }
   .shopping-list-card {
     position: absolute;
-      top: 0;
-      left: 32px;
+    top: 0;
+    left: 32px;
     padding: 24px;
   }
   .shopping-list-blok{
@@ -288,15 +287,15 @@ p.shopping-list-storage-empty {
   }
   .shopping-list-card{
     position: absolute;
-      top: 0;
-      left: 40px;
+    top: 0;
+    left: 40px;
   }
 
  .shopping-list-blok {
     width: 808px;
  }
  .shopping-list-book-description {
-   width: 808px;
-  margin: 0 0 70px 0;
+    width: 808px;
+    margin: 0 0 70px 0;
 }
 }
