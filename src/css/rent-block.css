@@ -109,7 +109,7 @@ p.shopping-list-storage-empty {
   .shopping-list-wrapper {
     position: absolute;
     top: 65px;
-    right: 0;
+    left: 380px;
     height: 770px;
   }
 

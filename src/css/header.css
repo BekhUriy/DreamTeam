@@ -29,6 +29,7 @@
   width: 18px;
   left: 1px;
   bottom: 1px;
+
   background-color: var(--switch_round);
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -85,6 +86,7 @@ input:checked + .slider:before {
     margin-right: 76px;
   }
 }
+
 .header-logo{
     fill: var(--text);
 }
@@ -189,6 +191,7 @@ input:checked + .slider:before {
   height: 34px;
   padding: 8px 16px;
   border-radius: 36px;
+
   background: var(--background_active);
   font-weight: 700;
   line-height: 18px;
@@ -198,6 +201,7 @@ input:checked + .slider:before {
 .modal-shop-btn {
   width: 150px;
   height: 20px;
+
   color: var(--text);
   font-weight: 500;
   line-height: 18px;
@@ -210,6 +214,7 @@ input:checked + .slider:before {
   align-items: center;
 }
 .modal-shop-icon {
+
   stroke: var(--text);
 }
 .modal-img {
