@@ -1,19 +1,51 @@
-:root {
-  font-family: DM Sans, sans-serif;
-  font-size: 14px;
-  line-height: 1, 12;
-  font-weight: 400;
-  --bold: 700;
-  font-style: normal;
+.darkmode {
   --background_l: #f6f6f6;
+  --white-text: #ffffff;
   --background_d: #202024;
-  --background_m: rgba(17, 17, 17, 0.4);
+  --background_m: #111;
   --background_active: #eac645;
   --text: #111;
   --text-menu: rgba(17, 17, 17, 0.6);
   --text-hover: #4f2ee8;
   --text-gray: #b4afaf;
-  --background_l: #202024;
-  --text: #ffffff;
-  color-scheme: dark;
+}
+
+/* Header dark theme */
+*.darkmode {
+  background-color: var(--background_d);
+}
+.darkmode .header{
+  background-color:var(--background_m);
+  border-radius: 0px 0px 8px 8px;
+  border: 1.5px solid var(--white-text);
+}
+.darkmode .header-logo{
+  fill: var(--white-text);
+}
+.darkmode .header-nav-link.current .header-logo{
+  fill:var(--background_m)
+}
+
+.darkmode .header-nav-list.current{
+color: var(--text);
+}
+.darkmode .header-nav-link{
+color: var(--white-text);
+}
+.darkmode .header-nav-link.current{
+color: var(--background_m);
+}
+
+/* Categories dark theme */
+
+.darkmode .genre{
+  color: var(--text-gray);
+}
+
+.darkmode .genre.active{
+  color: var(--text-hover);
+}
+
+.darkmode ::-webkit-scrollbar-thumb {
+  background: rgba(17, 17, 17, 0.6);
 }

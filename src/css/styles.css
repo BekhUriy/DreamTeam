@@ -14,6 +14,7 @@
 @import url('./reset.css');
 @import url('./scrollBtn.css');
 @import url('./support-ua.css');
+@import url('./dark.css');
 
 :root {
   font-family: DM Sans, sans-serif;
@@ -30,7 +31,7 @@
   --text-menu: rgba(17, 17, 17, 0.6);
   --text-hover: #4f2ee8;
   --text-gray: #b4afaf;
-  color-scheme: light;
+  /* color-scheme: light; */
 }
 
 /* @font-face {
