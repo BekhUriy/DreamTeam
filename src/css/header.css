@@ -29,6 +29,7 @@
   width: 18px;
   left: 1px;
   bottom: 1px;
+  background-color: var(--background_l);
   background-color: var(--switch_round);
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -88,10 +89,6 @@ input:checked + .slider:before {
 /* .header-logo{
     margin-right: 8px;
 } */
-
-.header-logo{
-    fill: var(--text);
-
 .header-nav {
   display: none;
   align-items: center;
@@ -193,7 +190,7 @@ input:checked + .slider:before {
   height: 34px;
   padding: 8px 16px;
   border-radius: 36px;
-  background: var(--background_active);
+  background: #eac645;
   font-weight: 700;
   line-height: 18px;
   letter-spacing: -0.04em;
@@ -202,7 +199,7 @@ input:checked + .slider:before {
 .modal-shop-btn {
   width: 150px;
   height: 20px;
-  color: var(--text);
+  color: #ffffff;
   font-weight: 500;
   line-height: 18px;
   letter-spacing: -0.04em;
@@ -214,7 +211,7 @@ input:checked + .slider:before {
   align-items: center;
 }
 .modal-shop-icon {
-  stroke: var(--text);
+  stroke: #ffffff;
 }
 .modal-img {
   position: absolute;
@@ -235,6 +232,8 @@ input:checked + .slider:before {
   opacity: 0;
   width: 0;
   height: 0;
+.header-logo{
+    fill: var(--text);
 }
 /* The slider */
 .slider {
@@ -414,6 +413,7 @@ input:checked + .slider:before {
   padding: 8px 16px;
   border-radius: 36px;
   background: #eac645;
+  background: var(--background_active);
   font-weight: 700;
   line-height: 18px;
   letter-spacing: -0.04em;
@@ -423,6 +423,7 @@ input:checked + .slider:before {
   width: 150px;
   height: 20px;
   color: #ffffff;
+  color: var(--text);
   font-weight: 500;
   line-height: 18px;
   letter-spacing: -0.04em;
@@ -435,6 +436,7 @@ input:checked + .slider:before {
 }
 .modal-shop-icon {
   stroke: #ffffff;
+  stroke: var(--text);
 }
 .modal-img {
   position: absolute;
