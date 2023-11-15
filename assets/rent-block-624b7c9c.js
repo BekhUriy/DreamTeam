@@ -39,4 +39,4 @@
           </svg>
         </button>
       </li>`).join("")}const c="storage-data";function p(i){const e=localStorage.getItem(i);return e===null?[]:JSON.parse(e)}function g(){const i=p(c);i&&i.length>0?(a.style.display="none",n.innerHTML=d(i)):(n.style.display="none",a.style.display="block")}g();
-//# sourceMappingURL=rent-block-c020005c.js.map
+//# sourceMappingURL=rent-block-624b7c9c.js.map
