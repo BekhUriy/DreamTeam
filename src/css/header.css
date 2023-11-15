@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(var(--text-hover), #dcdcdc);
+  background: linear-gradient(var(--title-blue-text), #dcdcdc);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -35,7 +35,7 @@
   transition: 0.4s;
 }
 input:checked + .slider {
-  background: linear-gradient(var(--text-hover), #686868);
+  background: linear-gradient(var(--title-blue-text), #686868);
 }
 input:checked + .slider:before {
   -webkit-transform: translateX(20px);
