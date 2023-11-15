@@ -56,8 +56,8 @@ function createMarcup(data) {
           onClick = "deleteCardItem('${book.id}')"
           class="shopping-list-btn-delete"
         >
-          <svg class="shopping-list-btn-delete-icon" width="18" height="18">
-            <use href=./img/sprit.svg#icon-trash-03"></use>
+          <svg class="shopping-list-btn-delete-icon" width="16" height="16">
+            <use href="../img/sprit.svg#icon-trash"></use>
           </svg>
         </button>
       </li>`
