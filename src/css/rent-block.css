@@ -103,7 +103,7 @@ p.shopping-list-storage-empty {
   }
 
   .header {
-    background: #FFF;
+    background: #fff;
   }
 
   .shopping-list-wrapper {
@@ -202,7 +202,7 @@ ul {
   margin: 0 0 14px 0;
   overflow: hidden;
   color: #111;
- /*  white-space: nowrap; */
+  /*  white-space: nowrap; */
   text-overflow: ellipsis;
 
   font-family: DM Sans;
@@ -248,4 +248,15 @@ ul {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .shopping-list-card {
+    padding: 24px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
 }
