@@ -1,19 +1,17 @@
-if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {
-    document.documentElement.style.display = 'none';
+// const root = document.querySelector(':root')
+// const themeSwitch = document.querySelector('#themeSwitch');
 
-    const linkElement = document.createElement('link');
-    linkElement.rel = 'stylesheet';
-    linkElement.href = 'light.css';
-    linkElement.onload = function () {
-        document.documentElement.style.display = '';
-    };
+// themeSwitch.addEventListener('change', changeTheme);
 
-    document.head.appendChild(linkElement);
-}
+// function changeTheme() {
+//     event.preventDefault();
+//     root.classList.toggle('dark-theme', themeSwitch.checked);
+// }
 
 const lightStyles = document.querySelectorAll('link[rel=stylesheet][media*=prefers-color-scheme][media*=light]');
 const darkStyles = document.querySelectorAll('link[rel=stylesheet][media*=prefers-color-scheme][media*=dark]');
 const darkSchemeMedia = matchMedia('(prefers-color-scheme: dark)');
+const root = document.querySelector(':root')
 const themeSwitch = document.querySelector('#themeSwitch');
 
 function setupSwitcher() {
@@ -88,10 +86,11 @@ function saveScheme(scheme) {
 function clearScheme() {
     localStorage.removeItem('color-scheme');
 }
+themeSwitch.addEventListener('change', changeTheme);
 
 setupSwitcher();
 setupScheme();
-
-
-
-
+function changeTheme() {
+    // event.preventDefault();
+    root.classList.toggle('dark-theme', themeSwitch.checked);
+}
