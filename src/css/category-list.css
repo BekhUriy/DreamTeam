@@ -42,8 +42,6 @@ aside {
  }
 
 .category {
-    
-    margin-block-end: auto;
     overflow: scroll;
     width: 335px;
     max-height: 228px;
@@ -73,7 +71,7 @@ aside {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.33;
+    line-height: 1.12;
     /* 133.333% */
     letter-spacing: -0.32px;
 
