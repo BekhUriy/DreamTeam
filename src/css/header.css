@@ -49,7 +49,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 .header {
-  background: var();
+  background: var(--background_h);
   border-radius: 0px 0px 8px 8px;
   border: 1.5px solid var(--text);
 }
