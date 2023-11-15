@@ -1,21 +1,22 @@
-import { API_SERVICE } from './api-requests';
-const listCreate = document.querySelector('.shopping-list-cards');
+// import { API_SERVICE } from './api-requests';
+// const listCreate = document.querySelector('.shopping-list-cards');
 
-const deleteShoppingList = document.querySelector('.shopping-list-btn-delete');
-const apiShoppingList = new API_SERVICE();
-const shoppingStorage = document.querySelector('.shopping-list-storage');
-document.deleteCardItem = function deleteCardItem(id) {
-  let data = getLocalStorage(storageKey)
-  data = data.filter(book => book.id !== id)
-  localStorage.setItem(storageKey, JSON.stringify(data))
+// const deleteShoppingList = document.querySelector('.shopping-list-btn-delete');
+// const apiShoppingList = new API_SERVICE();
+// const shoppingStorage = document.querySelector('.shopping-list-storage');
+// document.deleteCardItem = function deleteCardItem(id) {
+//   let data = getLocalStorage(storageKey)
+//   data = data.filter(book => book.id !== id)
+//   localStorage.setItem(storageKey, JSON.stringify(data))
 
-   const element = document.getElementById('' + id + '');
-   element.remove();
-  if (data.length === 0) {
-    listCreate.style.display = 'none';
-    shoppingStorage.style.display = 'block';
- }
-}
+//    const element = document.getElementById('' + id + '');
+//    element.remove();
+//   if (data.length === 0) {
+//     listCreate.style.display = 'none';
+//     shoppingStorage.style.display = 'block';
+//  }
+// }
+
 
 function createMarcup(data) {
    return data.map(
@@ -64,24 +65,25 @@ function createMarcup(data) {
     .join('');
 }
 
- const storageKey = 'storage-data';
-function getLocalStorage(key) {
-  const meaning = localStorage.getItem(key);
-  if (meaning === null) {
-  return  [];
-  } else {
-  return JSON.parse(meaning);
-  }
-};
 
-function getShoppingItems() {
-   const data = getLocalStorage(storageKey)
-  if (data && data.length > 0) {
-     shoppingStorage.style.display = 'none';
-    listCreate.innerHTML = createMarcup(data);
-  } else {
-    listCreate.style.display = 'none';
-    shoppingStorage.style.display = 'block';
-  }
-}
-getShoppingItems();
+//  const storageKey = 'storage-data';
+// function getLocalStorage(key) {
+//   const meaning = localStorage.getItem(key);
+//   if (meaning === null) {
+//   return  [];
+//   } else {
+//   return JSON.parse(meaning);
+//   }
+// };
+
+// function getShoppingItems() {
+//    const data = getLocalStorage(storageKey)
+//   if (data && data.length > 0) {
+//      shoppingStorage.style.display = 'none';
+//     listCreate.innerHTML = createMarcup(data);
+//   } else {
+//     listCreate.style.display = 'none';
+//     shoppingStorage.style.display = 'block';
+//   }
+// }
+// getShoppingItems();
