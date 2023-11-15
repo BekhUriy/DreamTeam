@@ -1,7 +1,7 @@
 import { API_SERVICE } from './api-requests';
 import { bestSellersMarkup } from './best-sellers';
 import { setActive } from './set-active';
-// import { openModalId } from "./modals";
+import { openModalId } from "./modal-about";
 
 const apiByCategory = new API_SERVICE();
 const topBooksByCategories = document.querySelector('.best-sellers-books');
