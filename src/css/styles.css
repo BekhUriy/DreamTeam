@@ -16,7 +16,7 @@
 @import url('./support-ua.css');
 /* @import url('./dark.css'); */
 
-/* :root {
+:root {
   font-family: DM Sans, sans-serif;
   font-size: 14px;
   line-height: 1.12;
@@ -24,7 +24,7 @@
   --bold: 700;
   font-style: normal;
   --background_l: #f6f6f6;
-  /* --background_d: #202024; */
+   --background_d: #202024;
   --background_h: #FFFFFF;
   --background_m: rgba(17, 17, 17, 0.4);
   --background_active: #eac645;
@@ -34,11 +34,10 @@
   --text-hover: #4f2ee8;
   --text-gray: #b4afaf;
   color-scheme: light;
-} */
+} 
 
 .dark-theme {
   --background_l: #202024;
-  /* --background_d: #202024; */
   --background_h: #111;
   --background_m: rgba(17, 17, 17, 0.4);
   --background_active: #eac645;
