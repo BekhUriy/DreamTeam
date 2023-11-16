@@ -1,7 +1,7 @@
 import { API_SERVICE } from './api-requests';
 import { bestSellersMarkup } from './best-sellers';
 import { setActive } from './set-active';
-import { openModalId } from "./modal-about";
+import { openModalId } from './modal-about';
 import Notiflix from 'notiflix';
 
 
