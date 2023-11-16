@@ -1,3 +1,4 @@
+
 const navBTN = document.querySelector('.nav-btn');
 
 navBTN.addEventListener('click', scrollDown);

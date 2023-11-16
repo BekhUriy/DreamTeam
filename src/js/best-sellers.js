@@ -16,7 +16,6 @@ async function bestSellersMarkup() {
     .then(topCategories => {
       return topCategories.data
         .map(topCategory => {
-          // const {book} = bookAttributes;
 
           // console.log(topCategory);
           const booksArr = topCategory.books

@@ -1,3 +1,4 @@
+
 const modalW = document.querySelector('.header-modal');
 const modalWinBtn = document.querySelector('.modal-open-btn');
 const allbody = document.querySelector('body');

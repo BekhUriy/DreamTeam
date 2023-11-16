@@ -1,5 +1,8 @@
-import { API_SERVICE } from './api-requests';
-const listCreate = document.querySelector('.shopping-list-cards');
+
+ 
+ import { API_SERVICE } from './api-requests';
+ const listCreate = document.querySelector('.shopping-list-cards');
+
 
 const deleteShoppingList = document.querySelector('.shopping-list-btn-delete');
 const apiShoppingList = new API_SERVICE();
