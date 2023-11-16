@@ -30,6 +30,3 @@ function createList() {
 
 createList();
 
-
-
-
