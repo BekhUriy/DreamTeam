@@ -2,7 +2,7 @@ const modalW = document.querySelector('.header-modal');
 const modalWinBtn = document.querySelector('.modal-open-btn');
 const allbody = document.querySelector('body');
 const burger = document.querySelector('.open-icon');
-console.dir(burger.innerHTML);
+// console.dir(burger.innerHTML);
 modalWinBtn.addEventListener('click', modWin);
 function modWin(event) {
   if (modalW.classList.contains('hidden-modal')) {
