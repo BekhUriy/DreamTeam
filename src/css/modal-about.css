@@ -3,7 +3,7 @@
     width: 100%;
     height: 100%;
     opacity: 1;
-    background-color: #1116;
+    background-color:var(--backdrop_m);
     position: fixed;
     top: 0;
     left: 0;
@@ -18,10 +18,11 @@
     right: 7px;
     border: none;
     cursor: pointer;
-    background: white;
+    background-color: inherit;
 }
 
 .about-svg{
+   fill: var(--text);
     width: 28px;
     height: 28px;
 }
@@ -41,15 +42,17 @@
     display: inline-block;
     width: 335px;
     padding: 40px 24px;
-    border: 2px solid gray;
+    border: 2px solid var(--text);
     border-radius: 18px;
+
     background-color: white;
     /* height: 806px; */
+
 }
 
-.about{
-    background-color: #fff;
-}
+/* .about{
+    background-color: var(--background_h);
+} */
 .modal-ad{
     display: inline-flex;
     padding: 14px 28px;
@@ -57,7 +60,7 @@
     gap: 10px;
     border-radius: 40px;
     margin-bottom: 0;
-    border: 2px solid #4F2EE8;
+    border: 2px solid var(--title-blue-text);
 }
 .about-book-modal {
     font-family: 'DM Sans';
@@ -147,12 +150,18 @@
     margin-top: 14px;
     gap: 20px;
 }
+.amazon{
+   filter: var(--shop-img);
+}
+.apple{
+    filter: grayscale();
+}
 
 .modal-ad{
     margin-top: 44px;
-    background-color: #fff;
+    background-color: var(--background_l);
     margin-left: 10px;
-    color: #111;
+    color: var(--text);
     font-family: DM Sans;
     font-size: 14px;
     font-style: normal;
