@@ -2,7 +2,7 @@ const modalW = document.querySelector('.header-modal');
 const modalWinBtn = document.querySelector('.modal-open-btn');
 const allbody = document.querySelector('body');
 const burger = document.querySelector('.open-icon');
-// console.dir(burger.innerHTML);
+console.dir(burger.innerHTML);
 modalWinBtn.addEventListener('click', modWin);
 function modWin(event) {
   if (modalW.classList.contains('hidden-modal')) {
@@ -30,17 +30,15 @@ function modWin(event) {
 //        }
 // });
 
-
 const currentPage = location.pathname;
-
+console.log('current page:', currentPage);
 const homePage = document.querySelector('.js-home-link'); 
 const shoppingListPage = document.querySelector('.js-shopping-link'); 
 
 
-if (currentPage === '/DreamTeam/shoping-list.html') { 
-  shoppingListPage.classList.add('current'); 
-  shoppingListPage.style.paddingBottom = '7px';
-  shoppingListPage.style.paddingTop = '7px';
+if (currentPage === '/shoping-list.html') { 
+    shoppingListPage.classList.add('current'); 
   } else { 
       homePage.classList.add('current'); 
 }
+
