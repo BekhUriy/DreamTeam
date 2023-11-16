@@ -183,7 +183,7 @@ p.shopping-list-storage-empty {
 .shopping-list-img{
   width: 100%;
   height: 100%;
-  object-fit:cover;
+   object-fit:contain;
 }
 .shopping-list-book-autor {
   display: block;

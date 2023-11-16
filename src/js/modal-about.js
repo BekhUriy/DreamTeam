@@ -4,7 +4,7 @@ const removeB = document.getElementById('removeBtn');
 const pRemove = document.getElementById('removeP');
 
 let storageObj = {};
-const STORAGE_KEY = 0; 
+const STORAGE_KEY = 0;
 
 // відкриття модалки
 function openModalId(e) {
@@ -87,7 +87,8 @@ async function findBookById(bookId) {
             marketAmazon: data.buy_links[0].url,
             marketAppleBooks: data.buy_links[1].url,
             list_name: data.list_name,
-            id: data._id,
+          id: data._id,
+            description: data.description,
         };
 
         return data;
@@ -140,6 +141,3 @@ function closeModal() {
 }
 
 export { openModalId };
-
-
-
