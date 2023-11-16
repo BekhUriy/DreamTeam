@@ -1,4 +1,10 @@
 
+import amazonJpg from '../img/amazon.jpg';
+import amazonJpg2x from '../img/amazon2x.jpg';
+import appleBookJpg from '../img/appleBook.jpg';
+import appleBookJpg2x from '../img/appleBook2x.jpg';
+
+
 const adBtn = document.getElementById('ad');
 const removeB = document.getElementById('removeBtn');
 const pRemove = document.getElementById('removeP');
@@ -114,12 +120,16 @@ function createModalMarkup(data) {
           <ul class="shop-modal-list">
             <li class="shop-modal-item">
               <a href="${marketAmazon}" target="_blank">
-                <img width="62" height="19" src="" alt="Amazon"/>
+                 <img width="62" height="19" srcset="${amazonJpg} 1x,${amazonJpg2x} 2x"
+                  src="${amazonJpg}"
+                  alt="Amazon"/>
               </a>
             </li>
             <li class="shop-modal-item">
               <a href="${marketAppleBooks}" target="_blank">
-                <img width="33" height="32" src="" alt="AppleBooks"/>
+                <img width="33" height="32" srcset="${appleBookJpg} 1x,${appleBookJpg2x} 2x"
+                  src="${appleBookJpg}"
+                  alt="appleBookPng"/>
               </a>
             </li>
           </ul>
