@@ -1,20 +1,261 @@
-/* .myModal{
+.myModal{
+    z-index: 23;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color:var(--backdrop_m);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
     display: none;
-} */
-
-.modal-about {
-  width: 335px;
-  height: 762px;
-  border-radius: 18px;
-  border: 2px solid #111;
-  background: #fff;
 }
-.modal-ad {
-  display: inline-flex;
-  padding: 14px 28px;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 40px;
-  margin-bottom: 0;
-  border: 2px solid #4f2ee8;
+
+.about-close{
+    position: absolute;
+    padding: 0;
+    top: 7px;
+    right: 7px;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.about-svg{
+   fill: var(--text);
+    width: 28px;
+    height: 28px;
+}
+
+.about-paragraf{
+    display: none;
+}
+
+.modal-about{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    top: 430px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 335px;
+    padding: 40px 24px;
+    border: 2px solid var(--text);
+    border-radius: 18px;
+
+    background-color: white;
+    /* height: 806px; */
+
+}
+
+/* .about{
+    background-color: var(--background_h);
+} */
+.modal-ad{
+    display: inline-flex;
+    padding: 14px 28px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 40px;
+    margin-bottom: 0;
+    border: 2px solid var(--title-blue-text);
+}
+.about-book-modal {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    top: 430px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 335px;
+    padding: 40px 24px;
+    border: 2px solid gray;
+    border-radius: 18px;
+    background-color: white;
+    height: 806px;
+}
+
+.js-backdrop-modal {
+    z-index: 23;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: #1116;
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+
+
+.about-close:hover {
+    fill: grey;
+}
+
+.about-img{
+    margin-top: 4px;
+}
+
+.image-about-book-modal {
+    width: 278px;
+    height: 408px;
+    border-radius: 8px;
+}
+
+.title-about-book-modal {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 14px;
+}
+
+
+.author-about-book-modal {
+    font-style: italic;
+    font-size: 12px;
+    line-height: 14px;
+    color: #B4AFAF;
+    margin-top: 4px;
+
+    width: 287px;
+
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+
+.text-about-book-modal {
+    width: 287px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 18px;
+    color: #111;
+    font-weight: 400;
+    letter-spacing: -0.56px;
+}
+
+
+.shop-modal-list {
+    width: 180px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 14px;
+    gap: 20px;
+}
+.amazon{
+   filter: var(--shop-img);
+}
+.apple{
+    filter: grayscale();
+}
+
+.modal-ad{
+    margin-top: 44px;
+    background-color: var(--background_l);
+    margin-left: 10px;
+    color: var(--text);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.14px;
+    text-transform: uppercase;
+}
+
+.modal-ad:hover {
+    border: 2px solid grey;
+    background: rgb(150, 150, 229);
+    color: white;
+    cursor: pointer;
+}
+
+.modal-ad:focus {
+    border: 1px solid blue;
+    background: rgb(150, 150, 229);
+    color: white;
+    cursor: pointer;
+}
+
+.add-storage-button {
+    width: 221px;
+}
+
+.storage-delete-button {
+    width: 279px;
+}
+
+.remove-modal-btn {
+    display: none;
+}
+
+.about-paragraf{
+    margin-top: 8px;
+    color: rgba(17, 17, 17, 0.50);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: -0.4px;
+}
+
+@media (min-width: 768px) {
+    .modal-about {
+        position: absolute;
+        top: 50%;
+        padding: 40px;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 579px;
+        height: 501px;
+    }
+    .about-close {
+        width: 28px;
+        height: 28px;
+        top: 24px;
+        right: 24px;
+    }
+    .about-img{
+        width: 192px;
+        height: 281px;
+        flex-shrink: 0;
+        border-radius: 8px;
+    }
+    .modal-text{
+        width: 270px;
+        position: absolute;
+        top: 30px;
+        left: 256px;
+    }
+    .modal-ad{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.18px;
+        display: flex;
+        width: 499px;
+        left: 20px;
+        position: absolute;
+        bottom: 76px;
+    }
+    .about-paragraf{
+        left: 98px;
+        right: 98px;
+        position: absolute;
+        bottom: 40px;
+    }
+
+    
+
 }

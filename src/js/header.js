@@ -1,4 +1,3 @@
-
 const modalW = document.querySelector('.header-modal');
 const modalWinBtn = document.querySelector('.modal-open-btn');
 const allbody = document.querySelector('body');
@@ -37,8 +36,10 @@ const homePage = document.querySelector('.js-home-link');
 const shoppingListPage = document.querySelector('.js-shopping-link'); 
 
 
-if (currentPage === '/shoping-list.html') { 
-    shoppingListPage.classList.add('current'); 
+if (currentPage === '/DreamTeam/shoping-list.html') { 
+  shoppingListPage.classList.add('current'); 
+  shoppingListPage.style.paddingBottom = '7px';
+  shoppingListPage.style.paddingTop = '7px';
   } else { 
       homePage.classList.add('current'); 
 }

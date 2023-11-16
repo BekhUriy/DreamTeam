@@ -1,4 +1,3 @@
-
 import { API_SERVICE } from "./api-requests";
 import { selectedCategory } from "./category-markup";
 

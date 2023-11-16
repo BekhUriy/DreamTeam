@@ -7,7 +7,7 @@ import appleBookJpg2x from '../img/shop/appleBook2x.png';
 const allModal = document.querySelector('.modal-about');
 
 let storageObj = {};
-const STORAGE_KEY = '0';
+const STORAGE_KEY = 'storage-data';
 
 // відкриття модалки
 function openModalId(e) {
@@ -32,6 +32,7 @@ function modalCheck() {
     return objToFind;
 
 }
+
 // Створюємо вікно
 async function createModal(bookId) {
     try {
@@ -202,5 +203,3 @@ function deleteFromShoppingList() {
 }
 
 export { openModalId, storageObj };
-
-

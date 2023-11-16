@@ -1,4 +1,3 @@
-
 export function setActive(evt) {
   const category = document.querySelector('.category');
 

@@ -1,7 +1,7 @@
 
 import { API_SERVICE} from "./api-requests";
 import { selectedCategory } from "./category-markup";
-// import {openModalId}
+import {openModalId} from './modal-about'
 
 const topBooksByCategories = document.querySelector('.best-sellers-books')
 
@@ -16,6 +16,7 @@ async function bestSellersMarkup() {
     .then(topCategories => {
       return topCategories.data
         .map(topCategory => {
+          // const {book} = bookAttributes;
 
           // console.log(topCategory);
           const booksArr = topCategory.books
@@ -44,13 +45,13 @@ async function bestSellersMarkup() {
                     </li>`)
         }).join('')
     })
-    // .then(()=>{
-    //    const openBookEl = document.querySelectorAll('.js-open-modal');
-    //     openBookEl.forEach(function(item){
-    //             //  console.log(item);
-    //              item.addEventListener('click', openModalId);
-    // })
-    // })
+    .then(()=>{
+       const openBookEl = document.querySelectorAll('.js-open-modal');
+        openBookEl.forEach(function(item){
+                //  console.log(item);
+                 item.addEventListener('click', openModalId);
+    })
+    })
     .then(() => {
         const seeMoreInCategory = document.querySelectorAll('.best-sellers-see-more-button');
         seeMoreInCategory.forEach(function(button){

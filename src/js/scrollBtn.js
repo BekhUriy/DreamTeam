@@ -1,4 +1,3 @@
-
 export const scrollBtn = {
   btn: document.querySelector('.scrollBtn'),
   show() {
