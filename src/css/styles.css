@@ -35,7 +35,7 @@
   --text-hover: #4f2ee8;
   --text-gray: #b4afaf;
   color-scheme: light;
-} 
+}
 
 .dark-theme {
   --background_l: #202024;
@@ -121,7 +121,7 @@ body {
   font-weight: 400;
 }
 
-.container {
+ .container {
   min-width: 320px;
   max-width: 375px;
   padding-left: 20px;
@@ -165,6 +165,3 @@ body {
     flex-direction: row;
     }
 }
-
-
-

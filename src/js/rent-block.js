@@ -16,7 +16,6 @@
   }
  }
 
-
 function createMarcup(data) {
    return data.map(
           (book) => `
@@ -59,11 +58,10 @@ function createMarcup(data) {
             <use href="../img/sprit.svg#icon-trash"></use>
           </svg>
         </button>
-      </li>`
+     </li>`
         )
     .join('');
 }
-
 
   const storageKey = 'storage-data';
  function getLocalStorage(key) {
