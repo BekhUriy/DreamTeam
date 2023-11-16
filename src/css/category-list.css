@@ -55,7 +55,7 @@ aside {
 @media only screen and (min-width: 768px) {
     .category {
         max-height: 472px;
-        width: 335px;
+        width: 337px;
         gap: 32px;
     }
 }

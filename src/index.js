@@ -8,3 +8,4 @@ import './js/scrollBtn.js';
 import './js/support-slider.js';
 import './js/modal-about.js';
 import './js/set-active.js'
+

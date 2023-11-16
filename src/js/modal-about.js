@@ -1,3 +1,4 @@
+
 import amazonJpg from '../img/shop/amazon.png';
 import amazonJpg2x from '../img/shop/amazon2x.png';
 import appleBookJpg from '../img/shop/appleBook.png';
@@ -201,7 +202,5 @@ function deleteFromShoppingList() {
 }
 
 export { openModalId, storageObj };
-
-
 
 
