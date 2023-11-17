@@ -4,16 +4,16 @@
 .shopping-list-wrapper {
   height: 812px;
   background: var(--background_l);
-  padding-top: 40px;
+}
+.heading-wrapper{
+ margin-top: 40px;
 }
 h1 .shopping-list-heading {
   width: 192px;
 }
 .shopping-list-heading {
-
    margin-left: 20px;
   color: var(--text);
-
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -41,7 +41,9 @@ h1 .shopping-list-heading {
   letter-spacing: -0.36px;
 }
 p.shopping-list-storage-empty {
-  margin: 0;
+  display: block;
+  margin: 0 auto;
+
 }
 .shopping-list-storage {
   display: block;
@@ -50,7 +52,8 @@ p.shopping-list-storage-empty {
   gap: 14px;
   width: 265px;
   height: 198px;
-  margin: 120px 55px 0 55px;
+ margin: 0 auto;
+ margin-top: 120px;
 }
 @media only screen and (min-width: 768px) {
   .shopping-list-wrapper {
@@ -72,7 +75,8 @@ p.shopping-list-storage-empty {
   .shopping-list-storage {
     gap: 20px;
     width: 349px;
-    margin: 140px 210px 0 209px;
+    margin: 0 auto;
+    margin-top: 140px;
   }
   .shopping-list-storage img {
     width: 322px;
@@ -83,16 +87,6 @@ p.shopping-list-storage-empty {
   .donation {
     display: block;
     margin: 40px 0 0 24px;
-  }
-  body {
-    position: relative;
-    background: #f6f6f6;
-  }
-  .shopping-list-wrapper {
-    position: absolute;
-    top: 79px;
-    left: 380px;
-    height: 770px;
   }
   .shopping-list-heading {
     margin-left: 40px;
@@ -105,38 +99,30 @@ p.shopping-list-storage-empty {
 /* === rent-block ===*/
 
 .shopping-list-cards {
-  height: 500px;
-  position: relative;
   margin-top: 40px;
-
-  padding: 0;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  justify-content: center;
-  align-items: center;
 }
 .shopping-list-card {
-  position: absolute;
-  top: 0;
-    left: 20px;
+  position: relative;
+  min-width:335px;
   display: flex;
   padding: 14px;
-
   flex-shrink: 0;
   border-radius: 16px;
   border: 2px solid rgba(79, 46, 232, 0.4);
   background: #fff;
 }
 .shopping-list-blok {
-  position: relative;
-  width: 193px;
+  min-width: 193px;
   display: flex;
   flex-direction: column;
   margin-left: 14px;
 }
 .shopping-list-book-title {
-  max-width: 144px;
+  width: 144px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -167,8 +153,8 @@ p.shopping-list-storage-empty {
   letter-spacing: 0.36px;
 }
 .shopping-list-book-description {
-  width: 193px;
-  height: auto;
+  min-width: 193px;
+  height: 56px;
   margin: 0 0 29px 0;
   overflow: hidden;
   color: #111;
@@ -209,7 +195,7 @@ p.shopping-list-storage-empty {
   border-radius: 50%;
   border: none;
   position: absolute;
-  top: 14px;
+   top: 14px;
   right: 14px;
   width: 28px;
   height: 28px;
@@ -238,25 +224,23 @@ p.shopping-list-storage-empty {
   height: 16px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px){
   .shopping-list-cards{
-    max-width: 768px;
+    padding: 0 32px ;
   }
   .shopping-list-card {
-    position: absolute;
-    top: 0;
-    left: 32px;
     padding: 24px;
   }
   .shopping-list-blok{
-    width: 508px;
+    min-width: 508px;
+    margin-left: 24px;
   }
   .shopping-list-book-title{
-    max-width: 200px;
+    min-width: 200px;
   }
   .shopping-list-book-description {
-    width: 508px;
-    height: auto;
+    min-width: 508px;
+    height: 53px;
     margin: 0 0 55px 0;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -293,21 +277,19 @@ p.shopping-list-storage-empty {
   }
 }
 
-@media only screen and (min-width: 1440px) {
-  .shopping-list-wrapper{
-    width: 1440px;
+@media only screen and (min-width:1440px) {
+  body{
+    position: relative;
+  }
+   .shopping-list-cards{
+    padding: 0 24px 0 40px;
   }
   .shopping-list-card{
-    position: absolute;
-    top: 0;
-    left: 40px;
+    min-width: 1000px;
   }
-
- .shopping-list-blok {
-    width: 808px;
- }
- .shopping-list-book-description {
-    width: 808px;
-    margin: 0 0 70px 0;
+ .shopping{
+   position: absolute;
+   top:71px;
+   left:381px
 }
 }

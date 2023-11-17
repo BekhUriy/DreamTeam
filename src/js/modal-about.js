@@ -61,9 +61,11 @@ async function findBookById(bookId) {
             marketAmazon: data.buy_links[0].url,
             marketAppleBooks: data.buy_links[1].url,
             list_name: data.list_name,
+
             id: data._id,
             description: data.description
   
+
         };
 
         return data;
