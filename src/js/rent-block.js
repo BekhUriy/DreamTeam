@@ -36,7 +36,7 @@ function createMarcup(data) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="../img/amazon.jpg" class="amazon" alt="${book.marketAmazon}" />
+              <img src="./img/amazon.png" class="amazon" alt="${book.marketAmazon}" />
             </a>
           </li>
           <li class="shopping-list-shop">
@@ -45,7 +45,7 @@ function createMarcup(data) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="../img/appleBook.jpg" class="appleBook" alt="${book.marketAppleBooks}" />
+              <img src="./img/appleBook.png" class="appleBook" alt="${book.marketAppleBooks}" />
             </a>
           </li>
         </ul>
