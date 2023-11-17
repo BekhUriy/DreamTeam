@@ -1,4 +1,26 @@
-.donation {
+/* .donation {
+  display: none;
+} */
+
+.shopping-page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px){
+  .shopping-page {
+    margin-bottom: 100px;
+    }
+}
+@media only screen and (min-width: 1440px){
+  .shopping-page {
+    flex-direction: row;
+    }
+}
+.shopping-support {
   display: none;
 }
 .shopping-list-wrapper {
@@ -6,13 +28,12 @@
   background: var(--background_l);
 }
 .heading-wrapper{
- margin-top: 40px;
+ /* margin-top: 40px; */
 }
 h1 .shopping-list-heading {
   width: 192px;
 }
 .shopping-list-heading {
-   margin-left: 20px;
   color: var(--text);
   font-size: 32px;
   font-style: normal;
@@ -63,7 +84,6 @@ p.shopping-list-storage-empty {
     width: 292px;
   }
   .shopping-list-heading {
-    margin-left: 32px;
     font-size: 48px;
     line-height: 52px;
   }
@@ -84,12 +104,13 @@ p.shopping-list-storage-empty {
 }
 
 @media only screen and (min-width: 1440px) {
-  .donation {
-    display: block;
-    margin: 40px 0 0 24px;
-  }
-  .shopping-list-heading {
+  /* .shopping{
     margin-left: 40px;
+  } */
+
+  .shopping-support {
+    display: block;
+    /* margin: 40px 0 0 24px; */
   }
   .shopping-list-storage {
     margin: 140px 355px 0 356px;
@@ -100,7 +121,7 @@ p.shopping-list-storage-empty {
 
 .shopping-list-cards {
   margin-top: 40px;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -228,13 +249,13 @@ p.shopping-list-storage-empty {
 
 @media only screen and (min-width: 768px){
   .shopping-list-cards{
-    padding: 0 32px ;
+    /* padding: 0 32px ; */
   }
   .shopping-list-card {
     padding: 24px;
   }
   .shopping-list-blok{
-    min-width: 508px;
+    /* min-width: 508px; */
     margin-left: 24px;
   }
   .shopping-list-book-title{
@@ -284,14 +305,14 @@ p.shopping-list-storage-empty {
     position: relative;
   }
    .shopping-list-cards{
-    padding: 0 24px 0 40px;
+    /* padding: 0 24px 0 40px; */
   }
   .shopping-list-card{
     min-width: 1000px;
   }
  .shopping{
-   position: absolute;
+   /* position: absolute;
    top:71px;
-   left:381px
+   left:381px */
 }
 }

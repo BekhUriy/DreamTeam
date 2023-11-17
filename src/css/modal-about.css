@@ -22,7 +22,7 @@
 }
 
 .about-svg {
-    fill: var(--text);
+    stroke: var(--text);
     width: 28px;
     height: 28px;
 }
@@ -47,7 +47,6 @@
     border: 2px solid var(--text);
     border-radius: 18px;
     background-color: var(--background_m);
-    height: 806px;
 }
 
 /* .about{
@@ -95,7 +94,7 @@
 
 
 
-.about-close:hover {
+.about-svg:hover {
     fill: grey;
 }
 
