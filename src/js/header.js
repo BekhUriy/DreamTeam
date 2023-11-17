@@ -8,12 +8,12 @@ function modWin(event) {
   if (modalW.classList.contains('hidden-modal')) {
     modalW.classList.remove('hidden-modal');
     allbody.classList.add('stop-scrolling');
-    burger.innerHTML = `<use href="/src/img/sprit.svg#icon-x"/>`;
+    burger.innerHTML = `<use href="/DreamTeam/assets/sprit-13701404.svg#icon-x"/>`;
     return;
   } else {
     modalW.classList.add('hidden-modal');
     allbody.classList.remove('stop-scrolling');
-    burger.innerHTML = `<use href="/src/img/sprit.svg#icon-burger"/>`;
+    burger.innerHTML = `<use href="/DreamTeam/assets/sprit-13701404.svg#icon-burger"/>`;
   }
 }
 
