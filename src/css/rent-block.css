@@ -121,7 +121,7 @@ p.shopping-list-storage-empty {
 
 .shopping-list-cards {
   margin-top: 40px;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -247,13 +247,13 @@ p.shopping-list-storage-empty {
 
 @media only screen and (min-width: 768px){
   .shopping-list-cards{
-    padding: 0 32px ;
+    /* padding: 0 32px ; */
   }
   .shopping-list-card {
     padding: 24px;
   }
   .shopping-list-blok{
-    min-width: 508px;
+    /* min-width: 508px; */
     margin-left: 24px;
   }
   .shopping-list-book-title{
@@ -303,7 +303,7 @@ p.shopping-list-storage-empty {
     position: relative;
   }
    .shopping-list-cards{
-    padding: 0 24px 0 40px;
+    /* padding: 0 24px 0 40px; */
   }
   .shopping-list-card{
     min-width: 1000px;
