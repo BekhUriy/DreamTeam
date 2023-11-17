@@ -1,4 +1,4 @@
-import"./assets/support-slider-70d937d4.js";const l=document.querySelector(".shopping-list-cards");document.querySelector(".shopping-list-btn-delete");const i=document.querySelector(".shopping-list-storage");document.deleteCardItem=function(e){let s=a(n);s=s.filter(o=>o.id!==e),localStorage.setItem(n,JSON.stringify(s)),document.getElementById(""+e).remove(),s.length===0&&(l.style.display="none",i.style.display="block")};function p(t){return t.map(e=>`
+import"./assets/support-slider-8657154d.js";const l=document.querySelector(".shopping-list-cards");document.querySelector(".shopping-list-btn-delete");const i=document.querySelector(".shopping-list-storage");document.deleteCardItem=function(e){let s=a(n);s=s.filter(o=>o.id!==e),localStorage.setItem(n,JSON.stringify(s)),document.getElementById(""+e).remove(),s.length===0&&(l.style.display="none",i.style.display="block")};function p(t){return t.map(e=>`
   <li class="shopping-list-card" id="${e.id}">
        <div class="shopping-list-card-img">
           <img src="${e.book_image}" class="shopping-list-img" alt="${e.title}"/>
