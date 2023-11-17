@@ -1,7 +1,7 @@
 
 import amazonJpg from '../img/shop/amazon.png';
 import amazonJpg2x from '../img/shop/amazon2x.png';
-import appleBookJpg from '../img/appleBook.png';
+import appleBookJpg from '../img/shop/applebook.png';
 import appleBookJpg2x from '../img/shop/book2x.png';
 
 const allModal = document.querySelector('.modal-about');
@@ -77,8 +77,10 @@ async function findBookById(bookId) {
 
 
 function createModalMarkup(data) {
-    const { book_image: bookModalImage, title: bookTitle, author: bookAuthor, buy_links: [marketAmazon, marketAppleBooks], description: bookDescription } = data;
-
+    const { book_image: bookModalImage, title: bookTitle, author: bookAuthor,description: bookDescription } = data;
+    const marketAmazon = data.buy_links[0].url;
+  const marketAppleBooks = data.buy_links[1].url;
+  
     const html = ` <div class="modal-book" id="my-modal-book">
     <button type="button" class="about-close">
       <svg class="about-svg">
