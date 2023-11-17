@@ -1,5 +1,5 @@
 import './js/api-requests.js';
-
+import './js/dark-theme.js';
 import './js/header.js';
 
 import './js/rent-block.js';

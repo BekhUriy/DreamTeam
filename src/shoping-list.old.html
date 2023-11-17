@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bookshelf</title>
+    <title>Shoping-list</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -12,33 +12,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
     <link rel="stylesheet" href="./css/styles.css" />
+  
   </head>
 
-  <body>
-    
-    <load="partials/header.html" />
-    <main class="container">
-      
-      <div class="home-page">
-        
-        <aside>
-          <load ="partials/category-list.html" />
-          <load ="partials/support-ua.html" />
-        </aside>
-       
-        <load ="partials/best-sellers.html" />
-        <load ="partials/scrollBtn.html" />
-      </div>
-    </main>
-    
-   
-      <load="partials/modal-about.html" />
-    
-   
-    <load="partials/footer.html" />
-
-    <script src="/index.js" type="module"></script>
+  <body> 
+      <load="partials/header.html" />
+  <main class="container">
+      <div class="shopping-page">
+        <div class="shopping-support">
+          <load="partials/support-ua.html" />
+        </div>
+      <load="partials/rent-block.html" />
+     
+      <script type="module" src="./js/rent-block.js"></script>
+      <script type="module" src="/shopping-list.js"></script>
+    </div>
+  </main>
   </body>
 </html>
