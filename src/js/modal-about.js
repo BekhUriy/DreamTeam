@@ -84,7 +84,7 @@ function createModalMarkup(data) {
     const html = ` 
     <button type="button" class="about-close">
       <svg class="about-svg">
-        <use href="./img/sprit.svg#close"></use>
+        <use href="./img/sprit.svg#icon-x-close"></use>
       </svg>
     </button>
     <div class="modal-book" id="my-modal-book">
