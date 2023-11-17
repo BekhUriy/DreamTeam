@@ -19,6 +19,8 @@
     "axios": "^1.6.1",
     "basiclightbox": "^5.0.4",
     "flatpickr": "^4.6.13",
+    "modals": "^0.1.9",
+    "module-name": "^0.0.1-security",
     "notiflix": "^3.2.6",
     "simplelightbox": "^2.14.2",
     "slim-select": "^2.6.0",
