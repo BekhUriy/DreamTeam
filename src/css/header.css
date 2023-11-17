@@ -193,7 +193,7 @@ input:checked + .slider:before {
   height: 34px;
   padding: 8px 16px;
   border-radius: 36px;
-  color: #ffffff;
+  color: #111111;
   background: var(--background_active);
   font-weight: 700;
   line-height: 18px;
