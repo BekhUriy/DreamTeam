@@ -16,19 +16,7 @@ function modWin(event) {
     burger.innerHTML = `<use href="./img/sprit.svg#icon-burger"/>`;
   }
 }
-// js for links
-// const navLinks = document.querySelectorAll('.header-nav-link');
-// console.log(location.pathname);
-// const currentPage = location.pathname;
-// console.log(currentPage);
 
-// navLinks.forEach(function(link) {
-//   const linkPath = link.getAttribute('href');
-//        console.log(linkPath);
-//        if (`.${currentPage}` === linkPath) {
-//          link.classList.add('current');
-//        }
-// });
 
 const currentPage = location.pathname;
 console.log('current page:', currentPage);

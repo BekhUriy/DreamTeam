@@ -136,9 +136,6 @@ function createModalMarkup(data) {
         adBtn.style.display ="none";
         removeBtn.style.display = "block";
         textToRemove.style.display = "block";
-        // textToRemove.style.display = "block";
-    // adBtn.style.display = objToFind ? 'none' : 'block';
-    // removeB.style.display = objToFind ? 'block' : 'none';
     } else{
         adBtn.style.display ="block";
         removeBtn.style.display = "none";
@@ -157,7 +154,7 @@ function closeModal() {
     document.getElementById('myModal').style.display = 'none';
     allModal.classList.remove("is-hidden");
 
-//   document.getElementById('myModal').style.display = 'none';
+
   document.body.style.overflow = 'auto';
 }
 

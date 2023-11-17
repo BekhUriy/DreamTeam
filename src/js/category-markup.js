@@ -70,17 +70,6 @@ async function onCategoryMarkup(selectedOption) {
     });
 }
 
-// function setActive(event) {
-//   console.log([event.currentTarget]);
-//   const allCategories = [...event.target.parentElement];
-// console.log(allCategories);
 
-// allCategories.forEach(liItem => {
-//   console.log(liItem);
-//   liItem.classList.remove('active');
-// });
-//   event.target.classList.add('active');
-
-// }
 
 export { selectedCategory };
