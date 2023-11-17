@@ -22,16 +22,15 @@ function updatePageTitle(categoryTitle) {
 function selectedCategory(event) {
   event.preventDefault();
 
-  // this.classList.add('active');
+  
 
   if (event.target.dataset.categoryName === 'All categories') {
     bestSellersMarkup();
-    // titleRef.innerHTML = `
-    // Best Sellers <span class="home-page-title-accent">Books</span>`;
+  
   }
   const categoryName = this.getAttribute('data-category-name');
   setActive(event);
-  // console.log(categoryName);
+ 
 
   titleRef.innerHTML = updatePageTitle(categoryName);
 
@@ -43,7 +42,7 @@ async function onCategoryMarkup(selectedOption) {
   let result = await apiByCategory
     .fetchBooksByCategory(selectedOption)
     .then(categoryBooks => {
-      // console.log(categoryBooks)
+      
       const booksArr = categoryBooks.data
         .map(
           book =>
@@ -64,7 +63,7 @@ async function onCategoryMarkup(selectedOption) {
     .then(() => {
       const openBookEl = document.querySelectorAll('.js-open-modal');
       openBookEl.forEach(function (item) {
-        //  console.log(item);
+        
         item.addEventListener('click', openModalId);
       });
     });

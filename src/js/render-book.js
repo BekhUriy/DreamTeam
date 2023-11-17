@@ -41,7 +41,7 @@ function renderGenre(evt) {
     console.log(activeCategory)
       const allCategories = evt.target.parentElement.querySelectorAll('a');
   console.log(allCategories)
-  // Remove the .active class from all 'a' elements
+ 
   let i = 0;
   for (i = 0; i < allCategories.length; i++){
     allCategories[i].classList.remove('active')

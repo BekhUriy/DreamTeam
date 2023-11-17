@@ -8,9 +8,9 @@ function scrollDown() {
     const down = document.querySelector('.icon-down');
     const up = document.querySelector('.icon-up');
 
-        // Check the current scroll position
+      
         if (fondsList.scrollTop + fondsList.clientHeight >= fondsList.scrollHeight) {
-            // Scroll to the top if at the bottom
+          
              
             while (fondsList.scrollTop !== 0) {
                 
@@ -20,7 +20,7 @@ function scrollDown() {
             
         } else {
             
-            // Scroll down by liHeight
+         
             fondsList.scrollTop += 2*liHeight;
         }
     

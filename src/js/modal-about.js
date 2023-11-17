@@ -9,7 +9,7 @@ const allModal = document.querySelector('.modal-about');
 let storageObj = {};
 const STORAGE_KEY = 'storage-data';
 
-// відкриття модалки
+
 function openModalId(e) {
     e.preventDefault();
     allModal.classList.remove("is-hidden");
@@ -18,7 +18,7 @@ function openModalId(e) {
     allModal.innerHTML = '';
   const bookId = this.getAttribute('data-book-id');
  
-    // console.log(bookId);
+    
     
     createModal(bookId);
 }
@@ -33,13 +33,12 @@ function modalCheck() {
 
 }
 
-// Створюємо вікно
+
 async function createModal(bookId) {
     try {
         const data = await findBookById(bookId);
 
-        // allModal.innerHTML = '';
-        // modalCheck();
+        
         createModalMarkup(data);
 
 
@@ -49,7 +48,7 @@ async function createModal(bookId) {
     }
 }
 
-// добір потрібної інформації за Айді
+
 async function findBookById(bookId) {
     try {
         const response = await fetch(`https://books-backend.p.goit.global/books/${bookId}`);
@@ -125,7 +124,7 @@ function createModalMarkup(data) {
 
     allModal.innerHTML = html;
 
-    // працюємо з кнопками
+  
     const adBtn = document.getElementById('ad');
     const removeBtn = document.getElementById('removeBtn');
     const textToRemove = document.getElementById('removeP');
@@ -147,7 +146,7 @@ removeBtn.addEventListener('click', deleteFromShoppingList);
 closeBtn.addEventListener('click', closeModal);
 }
 
-// Закриваємо вікно
+
 
 
 function closeModal() {

@@ -21,18 +21,18 @@ function createList() {
     apiService.fetchBooksCategoryList()
         .then(response => {
             const data = response.data;
-            // console.log(data);
+            
             listMarkup(data);
         })
         .then(()=>{
             const categoryOption = document.querySelectorAll('.genre');
-            // console.log(categoryOption);
+           
             categoryOption.forEach(function(item){
-                // console.log(item);
+                
                 item.addEventListener('click', selectedCategory);
-                // item.classList.remove('active');
+                
 
-                // console.log(item);
+               
             })
         })
         
