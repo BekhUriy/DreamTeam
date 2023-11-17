@@ -1,7 +1,7 @@
 
 import amazonJpg from '../img/shop/amazon.png';
 import amazonJpg2x from '../img/shop/amazon2x.png';
-import appleBookJpg from '../img/appleBook.png';
+import appleBookJpg from '../img/shop/applebook.png';
 import appleBookJpg2x from '../img/shop/book2x.png';
 
 const allModal = document.querySelector('.modal-about');
@@ -77,14 +77,17 @@ async function findBookById(bookId) {
 
 
 function createModalMarkup(data) {
-    const { book_image: bookModalImage, title: bookTitle, author: bookAuthor, buy_links: [marketAmazon, marketAppleBooks], description: bookDescription } = data;
-
-    const html = ` <div class="modal-book" id="my-modal-book">
+    const { book_image: bookModalImage, title: bookTitle, author: bookAuthor,description: bookDescription } = data;
+    const marketAmazon = data.buy_links[0].url;
+  const marketAppleBooks = data.buy_links[1].url;
+  
+    const html = ` 
     <button type="button" class="about-close">
       <svg class="about-svg">
-        <use href="./img/sprit.svg#close"></use>
+        <use href="./img/sprit.svg#icon-x-close"></use>
       </svg>
     </button>
+    <div class="modal-book" id="my-modal-book">
     <div class="modal" id="bookModal">
       <img src="${bookModalImage}" alt="Book Cover" class="about-img">
       <div class="modal-text">
@@ -111,6 +114,7 @@ function createModalMarkup(data) {
         </div>
       </div>
     </div>
+    </div>
     <div id="aboutBtns" class="all-btns-modal">
     <button type="button" id="ad" class="modal-ad">
       Add book to shopping list
@@ -122,7 +126,7 @@ function createModalMarkup(data) {
       <p id="removeP" class="about-paragraf remove">Сongratulations! You have added the book to the shopping list. To delete, press the
         button “Remove from the shopping
         list”.
-      </p></div>
+      </p>
       `;
 
     allModal.innerHTML = html;

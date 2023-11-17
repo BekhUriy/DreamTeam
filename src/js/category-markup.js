@@ -7,6 +7,10 @@ const apiByCategory = new API_SERVICE();
 const topBooksByCategories = document.querySelector('.best-sellers-books');
 const titleRef = document.querySelector('.home-page-title');
 
+
+const loader = document.querySelector('.loader');
+
+
 function updatePageTitle(categoryTitle) {
   const titleWords = categoryTitle.split(' ');
   const accentWord = titleWords.pop();
@@ -34,6 +38,8 @@ function selectedCategory(event) {
 
   titleRef.innerHTML = updatePageTitle(categoryName);
 
+  loader.classList.remove('is-hidden');
+
   topBooksByCategories.innerHTML = '';
   onCategoryMarkup(categoryName);
 }
@@ -59,6 +65,9 @@ async function onCategoryMarkup(selectedOption) {
         'category-books'
       );
       topBooksByCategories.innerHTML = booksArr;
+
+      loader.classList.add('is-hidden');
+
     })
     .then(() => {
       const openBookEl = document.querySelectorAll('.js-open-modal');
