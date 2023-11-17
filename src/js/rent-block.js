@@ -63,7 +63,7 @@ function createMarcup(data) {
     .join('');
 }
 
-  const storageKey =/*  'storage-data' */ '0';
+  const storageKey ='storage-data';
  function getLocalStorage(key) {
    const meaning = localStorage.getItem(key);
    if (meaning === null) {
