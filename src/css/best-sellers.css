@@ -1,5 +1,5 @@
-.selected-category-list {
-}
+/* .selected-category-list {
+} */
 
 .home-page-title {
   color: var(--text);
@@ -24,7 +24,7 @@ margin-right: auto;
 }
 
 .home-page-title-accent {
-  color: var(--text-hover);
+  color: var(--title-blue-text);
 }
 /* Categories books*/
 
@@ -88,9 +88,9 @@ width: calc((100% - 50px) / 3);
 
 /*Best sellers*/
 
-.best-seller-category {
+/* .best-seller-category {
 
-}
+} */
 
 .best-seller-category:not(:last-child) {
   margin-bottom: 40px;
@@ -244,7 +244,7 @@ margin-bottom: 8;
   margin-left: auto;
   padding: 14px 28px;
   border-radius: 40px;
-  border: 2px solid var(--text-hover);
+  border: 2px solid var(--title-blue-text);
   background-color: transparent;
   color: var(--text);
   font-weight: 700;
@@ -257,6 +257,6 @@ margin-bottom: 8;
 
 .best-sellers-see-more-button:hover,
 .best-sellers-see-more-button:focus {
-  background-color: var(--text-hover);
+  background-color: var(--title-blue-text);
   color: #FFF;
 }

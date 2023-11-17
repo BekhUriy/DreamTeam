@@ -55,7 +55,7 @@ aside {
 @media only screen and (min-width: 768px) {
     .category {
         max-height: 472px;
-        width: 337px;
+        width: 335px;
         gap: 32px;
     }
 }
@@ -87,6 +87,6 @@ aside {
 
 
 .active {
-    color: var(--text-hover);
+    color: var(--title-blue-text);
     text-transform: uppercase;
 }

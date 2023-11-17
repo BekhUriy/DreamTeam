@@ -1,7 +1,7 @@
 
 import { API_SERVICE} from "./api-requests";
 import { selectedCategory } from "./category-markup";
-// import {openModalId}
+import {openModalId} from './modal-about'
 
 const topBooksByCategories = document.querySelector('.best-sellers-books')
 
@@ -12,13 +12,13 @@ bestSellersMarkup();
 async function bestSellersMarkup() {
   let result = await apiCategories
     .fetchBestSellersBooks()
-    // console.log(result)
+    
     .then(topCategories => {
       return topCategories.data
         .map(topCategory => {
-          // const {book} = bookAttributes;
+          
 
-          // console.log(topCategory);
+          
           const booksArr = topCategory.books
             .map(
               book =>
@@ -30,7 +30,7 @@ async function bestSellersMarkup() {
 
             </li>`
             ).join('');
-            // console.log(booksArr);
+            
 
 
           topBooksByCategories.insertAdjacentHTML(
@@ -45,23 +45,23 @@ async function bestSellersMarkup() {
                     </li>`)
         }).join('')
     })
-    // .then(()=>{
-    //    const openBookEl = document.querySelectorAll('.js-open-modal');
-    //     openBookEl.forEach(function(item){
-    //             //  console.log(item);
-    //              item.addEventListener('click', openModalId);
-    // })
-    // })
+    .then(()=>{
+       const openBookEl = document.querySelectorAll('.js-open-modal');
+        openBookEl.forEach(function(item){
+                
+                 item.addEventListener('click', openModalId);
+    })
+    })
     .then(() => {
         const seeMoreInCategory = document.querySelectorAll('.best-sellers-see-more-button');
         seeMoreInCategory.forEach(function(button){
-            // console.log(button);
+           
             button.addEventListener('click', selectedCategory)
         })
 
     })
     .catch(error => {
-      console.log(error.message);
+      
       topBooksByCategories.innerHTML = 'No information';
     });
 

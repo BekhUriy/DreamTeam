@@ -8,9 +8,9 @@ function scrollDown() {
     const down = document.querySelector('.icon-down');
     const up = document.querySelector('.icon-up');
 
-        // Check the current scroll position
+      
         if (fondsList.scrollTop + fondsList.clientHeight >= fondsList.scrollHeight) {
-            // Scroll to the top if at the bottom
+          
              
             while (fondsList.scrollTop !== 0) {
                 
@@ -20,7 +20,7 @@ function scrollDown() {
             
         } else {
             
-            // Scroll down by liHeight
+         
             fondsList.scrollTop += 2*liHeight;
         }
     
@@ -33,3 +33,68 @@ function scrollDown() {
         up.classList.remove('is-hidden');
     }
 }
+
+const donate = [
+  {
+    title: 'Save the Children',
+    url: 'https://www.savethechildren.net/what-we-do/emergencies/ukraine-crisis',
+    img: 'save',
+  },
+  {
+    title: 'Project HOPE',
+    url: 'https://www.projecthope.org/country/ukraine/',
+    img: 'hope',
+  },
+  {
+    title: 'International Medical Corps',
+    url: 'https://internationalmedicalcorps.org/country/ukraine/',
+    img: 'imc',
+    },
+  {
+    title: 'RAZOM',
+    url: 'https://www.razomforukraine.org/',
+    img: 'razom',
+  },
+  {
+    title: 'Action against hunger',
+    url: 'https://www.actionagainsthunger.org/location/europe/ukraine/',
+    img: 'aahunger',
+    },
+  {
+    title: 'Serhiy Prytula Charity Foundation',
+    url: 'https://prytulafoundation.org/en',
+    img: 'prytula',
+    },
+      {
+    title: 'Medicins Sans Frontieres',
+    url: 'https://www.msf.org/ukraine',
+    img: 'medsfront',
+    },
+  {
+    title: 'World vision',
+    url: 'https://www.wvi.org/emergencies/ukraine',
+    img: 'worldvision',
+  },
+  
+  {
+    title: 'UNITED24',
+    url: 'https://u24.gov.ua/uk',
+    img: 'united',
+  },
+]
+
+// function fondMarkup(donate) {
+//     const markup = donate.map((el, index) => {
+//         const { title, url, img } = el;
+//         const orderNumber = ('0' + (index + 1)).slice(-2);
+//         return `<li class="fonds-elm">
+//                 <a class="fonds-link" href="${url}" target="_blank" rel="noopener noreferrer">
+//                     <div class="num-order">${orderNumber}</div>
+//                 <img src="./img/suport-ua/${img}.png" alt="${title}" srcset="./img/suport-ua/${img}.png 1x, ./img/suport-ua/${img}@2x.png 2x">
+//             </a></li>`
+//     }).join('');
+//     const fonds = document.querySelector('.fonds');
+//     fonds.insertAdjacentHTML('beforeend', markup)
+// }
+
+// fondMarkup(donate)

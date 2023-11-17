@@ -10,12 +10,12 @@
 @import url('./category-list.css');
 @import url('./footer.css');
 @import url('./header.css');
-/* @import url('./rent-block.css'); */
+@import url('./rent-block.css');
 @import url('./reset.css');
 @import url('./scrollBtn.css');
 @import url('./support-ua.css');
 @import url('./loader.css');
-/* @import url('./dark.css'); */
+
 
 :root {
   font-family: DM Sans, sans-serif;
@@ -25,28 +25,32 @@
   --bold: 700;
   font-style: normal;
   --background_l: #f6f6f6;
-   --background_d: #202024;
+  --background_d: #202024;
   --background_h: #FFFFFF;
-  --background_m: rgba(17, 17, 17, 0.4);
+  --backdrop_m: rgba(17, 17, 17, 0.4);
+  --background_m:#ffffff;
   --background_active: #eac645;
   --text: #111;
   --switch_round: #F7F7F7;
+  --title-blue-text:#4f2ee8;
   --text-menu: rgba(17, 17, 17, 0.6);
   --text-hover: #4f2ee8;
   --text-gray: #b4afaf;
+  --shop-img: grayscale(100%);
   color-scheme: light;
-} 
+}
 
 .dark-theme {
   --background_l: #202024;
   --background_h: #111;
-  --background_m: rgba(17, 17, 17, 0.4);
+  --background_m: #202024;
   --background_active: #eac645;
-   --text: #ffffff;
+  --text: #ffffff;
   --text-menu: rgba(17, 17, 17, 0.6);
-  --text-hover: #4f2ee8;
+  --text-hover: #eac645;
   --text-gray: #b4afaf;
   --text-menu:rgba(255, 255, 255, 0.6);
+  --shop-img:brightness(0) invert();
   color-scheme: dark;
 }
 
@@ -121,7 +125,7 @@ body {
   font-weight: 400;
 }
 
-.container {
+ .container {
   min-width: 320px;
   max-width: 375px;
   padding-left: 20px;
@@ -165,6 +169,3 @@ body {
     flex-direction: row;
     }
 }
-
-
-
