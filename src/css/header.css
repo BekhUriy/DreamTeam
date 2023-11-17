@@ -162,8 +162,6 @@ input:checked + .slider:before {
   background-color: var(--background_active);
   border-radius: 36px;
   font-weight: 700;
-
-  height: 34px;
 }
 .hidden-modal {
   display: none;

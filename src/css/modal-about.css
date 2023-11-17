@@ -44,10 +44,8 @@
     padding: 40px 24px;
     border: 2px solid var(--text);
     border-radius: 18px;
-
-    background-color: white;
-    /* height: 806px; */
-
+    background-color:var(--background_m);
+    height: 806px;
 }
 
 /* .about{

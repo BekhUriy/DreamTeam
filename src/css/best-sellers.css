@@ -107,7 +107,6 @@ margin-bottom: 18px;
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  /* width: 996px; */
 gap: 24px;
 justify-content: space-between;
 }

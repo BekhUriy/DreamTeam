@@ -87,6 +87,6 @@
 
 
 .active {
-    color: var(--text-hover);
+    color: var(--title-blue-text);
     text-transform: uppercase;
 }
