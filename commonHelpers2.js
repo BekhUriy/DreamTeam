@@ -1,4 +1,4 @@
-import"./assets/support-slider-0b1d3c72.js";const l=document.querySelector(".shopping-list-cards");document.querySelector(".shopping-list-btn-delete");const i=document.querySelector(".shopping-list-storage");document.deleteCardItem=function(e){let s=a(n);s=s.filter(o=>o.id!==e),localStorage.setItem(n,JSON.stringify(s)),document.getElementById(""+e).remove(),s.length===0&&(l.style.display="none",i.style.display="block")};function p(t){return t.map(e=>`
+import"./assets/support-slider-2611f58d.js";const l=document.querySelector(".shopping-list-cards");document.querySelector(".shopping-list-btn-delete");const i=document.querySelector(".shopping-list-storage");document.deleteCardItem=function(e){let s=a(n);s=s.filter(o=>o.id!==e),localStorage.setItem(n,JSON.stringify(s)),document.getElementById(""+e).remove(),s.length===0&&(l.style.display="none",i.style.display="block")};function p(t){return t.map(e=>`
   <li class="shopping-list-card" id="${e.id}">
        <div class="shopping-list-card-img">
           <img src="${e.book_image}" class="shopping-list-img" alt="${e.title}"/>
@@ -16,7 +16,7 @@ import"./assets/support-slider-0b1d3c72.js";const l=document.querySelector(".sho
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="../img/amazon.jpg" class="amazon" alt="${e.marketAmazon}" />
+              <img src="./img/amazon.png" class="amazon" alt="${e.marketAmazon}" />
             </a>
           </li>
           <li class="shopping-list-shop">
@@ -25,7 +25,7 @@ import"./assets/support-slider-0b1d3c72.js";const l=document.querySelector(".sho
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="../img/appleBook.jpg" class="appleBook" alt="${e.marketAppleBooks}" />
+              <img src="./img/appleBook.png" class="appleBook" alt="${e.marketAppleBooks}" />
             </a>
           </li>
         </ul>
