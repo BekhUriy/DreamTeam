@@ -20,7 +20,7 @@ function createMarcup(data) {
    return data.map(
           (book) => `
   <li class="shopping-list-card" id="${book.id}">
-        <div class="shopping-list-card-img">
+       <div class="shopping-list-card-img">
           <img src="${book.book_image}" class="shopping-list-img" alt="${book.title}"/>
         </div>
         <div class="shopping-list-blok">
@@ -36,7 +36,7 @@ function createMarcup(data) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./img/amazon.png" class="amazon" alt="${book.marketAmazon}" />
+              <img src="../img/amazon.jpg" class="amazon" alt="${book.marketAmazon}" />
             </a>
           </li>
           <li class="shopping-list-shop">
@@ -45,7 +45,7 @@ function createMarcup(data) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./img/appleBook.png" class="appleBook" alt="${book.marketAppleBooks}" />
+              <img src="../img/appleBook.jpg" class="appleBook" alt="${book.marketAppleBooks}" />
             </a>
           </li>
         </ul>
@@ -58,12 +58,12 @@ function createMarcup(data) {
             <use href="../img/sprit.svg#icon-trash"></use>
           </svg>
         </button>
-     </li>`
+  </li>`
         )
     .join('');
 }
 
-  const storageKey = 'storage-data';
+  const storageKey =/*  'storage-data' */ '0';
  function getLocalStorage(key) {
    const meaning = localStorage.getItem(key);
    if (meaning === null) {

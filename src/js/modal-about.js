@@ -94,6 +94,7 @@ async function findBookById(bookId) {
             marketAppleBooks: data.buy_links[1].url,
             list_name: data.list_name,
           id: data._id,
+          description: data.description,
         };
 
         return data;
