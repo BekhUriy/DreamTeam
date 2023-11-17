@@ -90,7 +90,7 @@ function fondMarkup(donate) {
         return `<li class="fonds-elm">
                 <a class="fonds-link" href="${url}" target="_blank" rel="noopener noreferrer">
                     <div class="num-order">${orderNumber}</div>
-                <img src="../img/suport-ua/${img}.png" alt="${title}" srcset="../img/suport-ua/${img}.png 1x, ../img/suport-ua/${img}@2x.png 2x">
+                <img src="./img/suport-ua/${img}.png" alt="${title}" srcset="./img/suport-ua/${img}.png 1x, ./img/suport-ua/${img}@2x.png 2x">
             </a></li>`
     }).join('');
     const fonds = document.querySelector('.fonds');
