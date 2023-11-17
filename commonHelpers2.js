@@ -16,7 +16,7 @@ import"./assets/support-slider-8657154d.js";const l=document.querySelector(".sho
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./img/amazon.jpg" class="amazon" alt="${e.marketAmazon}" />
+              <img src="../img/amazon.jpg" class="amazon" alt="${e.marketAmazon}" />
             </a>
           </li>
           <li class="shopping-list-shop">
@@ -25,7 +25,7 @@ import"./assets/support-slider-8657154d.js";const l=document.querySelector(".sho
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./img/appleBook.jpg" class="appleBook" alt="${e.marketAppleBooks}" />
+              <img src="../img/appleBook.jpg" class="appleBook" alt="${e.marketAppleBooks}" />
             </a>
           </li>
         </ul>
@@ -35,7 +35,7 @@ import"./assets/support-slider-8657154d.js";const l=document.querySelector(".sho
           class="shopping-list-btn-delete"
         >
           <svg class="shopping-list-btn-delete-icon" width="16" height="16">
-            <use href="./img/sprit.svg#icon-trash"></use>
+            <use href="../img/sprit.svg#icon-trash"></use>
           </svg>
         </button>
   </li>`).join("")}const n="storage-data";function a(t){const e=localStorage.getItem(t);return e===null?[]:JSON.parse(e)}function r(){const t=a(n);t&&t.length>0?(i.style.display="none",l.innerHTML=p(t)):(l.style.display="none",i.style.display="block")}r();
