@@ -1,4 +1,4 @@
-aside {
+.categoryes {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -7,14 +7,14 @@ aside {
 }
 
 @media only screen and (min-width: 768px) {
-    aside {
+    .categoryes {
         flex-direction: row;
         gap: 32px;
     }
 }
 
 @media only screen and (min-width: 1440px) {
-    aside {
+    .categoryes {
         flex-direction: column;
         gap: 86px;
     }
