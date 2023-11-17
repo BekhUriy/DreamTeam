@@ -171,7 +171,7 @@ function addToShoppingList() {
     adBtn.style.display ="none";
     removeBtn.style.display = "block";
 
-    console.log(storageObj);
+    
     modalCheck();
 }
 
