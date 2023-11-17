@@ -22,7 +22,7 @@
 }
 
 .about-svg {
-    fill: var(--text);
+    stroke: var(--text);
     width: 28px;
     height: 28px;
 }
@@ -94,7 +94,7 @@
 
 
 
-.about-close:hover {
+.about-svg:hover {
     fill: grey;
 }
 
