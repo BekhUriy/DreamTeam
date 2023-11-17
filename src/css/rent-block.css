@@ -28,7 +28,7 @@
   background: var(--background_l);
 }
 .heading-wrapper{
- margin-top: 40px;
+ /* margin-top: 40px; */
 }
 h1 .shopping-list-heading {
   width: 192px;
@@ -104,9 +104,9 @@ p.shopping-list-storage-empty {
 }
 
 @media only screen and (min-width: 1440px) {
-  .shopping{
+  /* .shopping{
     margin-left: 40px;
-  }
+  } */
 
   .shopping-support {
     display: block;
@@ -309,8 +309,8 @@ p.shopping-list-storage-empty {
     min-width: 1000px;
   }
  .shopping{
-   position: absolute;
+   /* position: absolute;
    top:71px;
-   left:381px
+   left:381px */
 }
 }
