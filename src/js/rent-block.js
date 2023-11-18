@@ -30,20 +30,28 @@ function createMarcup(data) {
           <p class="shopping-list-book-autor">"${book.author}"</p>
         </div>
         <ul class="shopping-list-shops">
-          <li class="shop-modal-item">
-              <a href="${marketAmazon}" target="_blank">
-                 <img class="amazon" width="62" height="19" srcset="${amazonJpg} 1x,${amazonJpg2x} 2x"
-                  src="${amazonJpg}"
-                  alt="Amazon"/>
-              </a>
-            </li>
-            <li class="shop-modal-item">
-              <a href="${marketAppleBooks}" target="_blank">
-                <img class="apple" width="33" height="32" srcset="${appleBookJpg} 1x,${appleBookJpg2x} 2x"
-                  src="${appleBookJpg}"
-                  alt="appleBookPng"/>
-              </a>
-            </li>
+          <li class="shopping-list-shop">
+            <a
+              href="${book.marketAmazon}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+
+              <img src="./img/amazon.png" class="amazon" alt="${book.marketAmazon}" />
+
+            </a>
+          </li>
+          <li class="shopping-list-shop">
+            <a
+              href="${book.marketAppleBooks}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+
+              <img src="./img/appleBook.png" class="appleBook" alt="${book.marketAppleBooks}" />
+
+            </a>
+          </li>
         </ul>
         <button
           type="button"
