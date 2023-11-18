@@ -16,7 +16,9 @@ import"./assets/support-slider-e351bfd2.js";const l=document.querySelector(".sho
               target="_blank"
               rel="noopener noreferrer"
             >
+
               <img src="./img/amazon.png" class="amazon" alt="${e.marketAmazon}" />
+
             </a>
           </li>
           <li class="shopping-list-shop">
@@ -25,7 +27,9 @@ import"./assets/support-slider-e351bfd2.js";const l=document.querySelector(".sho
               target="_blank"
               rel="noopener noreferrer"
             >
+
               <img src="./img/appleBook.png" class="appleBook" alt="${e.marketAppleBooks}" />
+
             </a>
           </li>
         </ul>
