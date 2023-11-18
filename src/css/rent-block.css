@@ -239,10 +239,12 @@ p.shopping-list-storage-empty {
 .shopping-list-shop .amazon {
   width: 32px;
   height: 11px;
+  filter: var(--shop-img);
 }
 .shopping-list-shop .appleBook {
   width: 16px;
   height: 16px;
+  filter: grayscale();
 }
 
 @media only screen and (min-width: 768px){
