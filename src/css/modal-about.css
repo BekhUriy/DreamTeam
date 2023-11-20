@@ -19,10 +19,12 @@
     border: none;
     cursor: pointer;
     background-color: inherit;
+    stroke: #111;
+
 }
 
 .about-svg {
-    fill: var(--text);
+    stroke: #111;
     width: 28px;
     height: 28px;
 }
@@ -95,7 +97,7 @@
 
 
 .about-close:hover {
-    fill: grey;
+    stroke: grey;
 }
 
 .about-img {

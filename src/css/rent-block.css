@@ -295,6 +295,7 @@ p.shopping-list-storage-empty {
   .shopping-list-btn-delete-icon{
     width: 18px;
     height: 18px;
+    stroke:#fff;
   }
 }
 

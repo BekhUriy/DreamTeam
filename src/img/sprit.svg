@@ -23,14 +23,18 @@
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.286" d="m28.666 24-8.857-8m-7.619 0-8.857 8M2.667 9.333l10.887 7.621c.882.617 1.322.926 1.802 1.045.423.106.866.106 1.29 0 .479-.12.92-.428 1.802-1.045l10.887-7.621M9.067 26.667h13.867c2.24 0 3.36 0 4.216-.436a3.996 3.996 0 0 0 1.748-1.748c.436-.856.436-1.976.436-4.216v-8.533c0-2.24 0-3.36-.436-4.216A3.991 3.991 0 0 0 27.15 5.77c-.856-.436-1.976-.436-4.216-.436H9.067c-2.24 0-3.36 0-4.216.436a3.991 3.991 0 0 0-1.748 1.748c-.436.856-.436 1.976-.436 4.216v8.533c0 2.24 0 3.36.436 4.216a3.996 3.996 0 0 0 1.748 1.748c.856.436 1.976.436 4.216.436z" fill="none" stroke="#111"/>
     </symbol>
     <symbol id="icon-trash" viewBox="0 0 32 32">
-      <path fill="none" stroke="#fff" style="stroke:var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.909" d="M12 4h8M4 8h24m-2.667 0-.935 14.026c-.14 2.104-.21 3.157-.665 3.954a4 4 0 0 1-1.731 1.619c-.826.4-1.881.4-3.99.4h-4.025c-2.109 0-3.163 0-3.99-.4a4.005 4.005 0 0 1-1.731-1.619c-.455-.798-.525-1.85-.665-3.954L6.666 8m6.667 6v6.667M18.667 14v6.667"/>
+      <path  style="stroke:var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.909" d="M12 4h8M4 8h24m-2.667 0-.935 14.026c-.14 2.104-.21 3.157-.665 3.954a4 4 0 0 1-1.731 1.619c-.826.4-1.881.4-3.99.4h-4.025c-2.109 0-3.163 0-3.99-.4a4.005 4.005 0 0 1-1.731-1.619c-.455-.798-.525-1.85-.665-3.954L6.666 8m6.667 6v6.667M18.667 14v6.667"/>
+    <!-- fill="none" stroke="#fff" -->
     </symbol>
     <symbol id="icon-user" viewBox="0 0 32 32">
       <path fill="#f6f6f6" style="fill:var(--color3, #f6f6f6)" d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z"/>
       <path fill="#4f2ee8" style="fill:var(--color4, #4f2ee8)" d="M10.523 22.847a5.477 5.477 0 1 1 10.954 0H10.522zM16 16.685c-2.27 0-4.108-1.838-4.108-4.108S13.73 8.469 16 8.469c2.27 0 4.108 1.838 4.108 4.108S18.27 16.685 16 16.685z"/>
     </symbol>
     <symbol id="icon-x-close" viewBox="0 0 32 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="3.429" d="M24 8 8 24M8 8l16 16" fill="none" stroke="#111"/>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="3.429" d="M24 8 8 24M8 8l16 16" 
+      />
+      <!-- fill="none" stroke="#111" -->
+      
     </symbol>
     <symbol id="icon-untitled" viewBox="0 0 22 32">
       <path fill="#fff" style="fill:var(--color1, #fff)" d="M.528 0h21.047c.291 0 .528.236.528.528v30.944a.528.528 0 0 1-.528.528H.528A.528.528 0 0 1 0 31.472V.528C0 .237.236 0 .528 0z"/>
